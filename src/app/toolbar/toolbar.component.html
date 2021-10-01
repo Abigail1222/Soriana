@@ -1,0 +1,39 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="natural">
+    <ion-buttons slot="start">
+      <ion-button><ion-icon  name="location-outline"></ion-icon>
+        <ion-title size="small" style="text-transform:none">Ubica tu tienda</ion-title>
+      </ion-button>
+    </ion-buttons>
+    
+    <div class="parent">
+      <img class="child" [src]="sorianaLogo">
+    </div>
+    
+    <ion-buttons slot="end">
+      <ion-searchbar class="search-bar" placeholder="Buscar"></ion-searchbar>
+      <ion-button><ion-icon slot="icon-only" name="person-circle"></ion-icon></ion-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button><ion-icon slot="icon-only" name="cart-outline"></ion-icon></ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+  <ion-toolbar class="lower">
+    <ion-buttons slot="start">
+      <ion-button>
+        <ion-title size="small" color="natural" style="text-transform:none">Departamentos</ion-title>
+      </ion-button>
+      <ion-button>
+        <ion-title size="small" color="natural" style="text-transform:none">Promociones</ion-title>
+      </ion-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-title size="small" color="natural" style="text-transform:none">Servicios</ion-title>
+      </ion-button>
+      <ion-button>
+        <ion-title size="small" color="natural" style="text-transform:none">Ayuda</ion-title>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
