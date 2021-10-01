@@ -1,0 +1,78 @@
+
+img {
+    display: "block"; 
+    margin-left: "auto";
+    margin-left: "auto";
+    width: 136px;
+    height: 34px;
+}
+
+.lower {
+    --background: #E31D1A;
+    --min-height: 30px;
+    
+}
+.search-bar {
+    --icon-color: #4d4f53;
+}
+
+.parent {
+    display: flex;
+    height: 60px; /* Or whatever */
+}
+
+.child {
+    margin: auto;
+    margin-left: 385px;  /* Magic! */
+}
+
+.outer
+{
+    border: 1px solid #888;
+    width: 100px;
+    height: 100px;
+}
+
+.inner
+{
+    display:table-cell;
+    height: 100px;
+    width: 100px;
+    vertical-align: middle;
+}
+
+.ion-color-carmin {
+    --ion-color-base: var(--ion-color-carmin);
+    --ion-color-base-rgb: var(--ion-color-carmin-rgb);
+    --ion-color-contrast: var(--ion-color-carmin-contrast);
+    --ion-color-contrast-rgb: var(--ion-color-carmin-contrast-rgb);
+    --ion-color-shade: var(--ion-color-carmin-shade);
+    --ion-color-tint: var(--ion-color-carmin-tint);
+  }
+  
+  .ion-color-natural {
+    --ion-color-base: var(--ion-color-natural);
+    --ion-color-base-rgb: var(--ion-color-natural-rgb);
+    --ion-color-contrast: var(--ion-color-natural-contrast);
+    --ion-color-contrast-rgb: var(--ion-color-natural-contrast-rgb);
+    --ion-color-shade: var(--ion-color-natural-shade);
+    --ion-color-tint: var(--ion-color-natural-tint);
+  }
+
+  .ion-color-rojo {
+    --ion-color-base: var(--ion-color-rojo);
+    --ion-color-base-rgb: var(--ion-color-rojo-rgb);
+    --ion-color-contrast: var(--ion-color-rojo-contrast);
+    --ion-color-contrast-rgb: var(--ion-color-rojo-contrast-rgb);
+    --ion-color-shade: var(--ion-color-rojo-shade);
+    --ion-color-tint: var(--ion-color-rojo-tint);
+  }
+
+  .ion-color-ceniza {
+    --ion-color-base: var(--ion-color-ceniza);
+    --ion-color-base-rgb: var(--ion-color-ceniza-rgb);
+    --ion-color-contrast: var(--ion-color-ceniza-contrast);
+    --ion-color-contrast-rgb: var(--ion-color-ceniza-contrast-rgb);
+    --ion-color-shade: var(--ion-color-ceniza-shade);
+    --ion-color-tint: var(--ion-color-ceniza-tint);
+  }
