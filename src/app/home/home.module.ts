@@ -7,6 +7,8 @@ import { HomePage } from './home.page';
 import { HomePageRoutingModule } from './home-routing.module';
 import { ToolbarComponent } from '../toolbar/toolbar.component';
 import { FooterComponent } from '../footer/footer.component';
+import { ItemComponent } from '../item/item.component';
+import { SearchComponent } from '../search/search.component';
 
 
 @NgModule({
@@ -16,7 +18,7 @@ import { FooterComponent } from '../footer/footer.component';
     IonicModule,
     HomePageRoutingModule
   ],
-  exports: [ToolbarComponent, FooterComponent],
-  declarations: [HomePage, ToolbarComponent, FooterComponent]
+  exports: [ToolbarComponent, FooterComponent, ItemComponent, SearchComponent],
+  declarations: [HomePage, ToolbarComponent, FooterComponent, ItemComponent, SearchComponent]
 })
 export class HomePageModule {}

@@ -1,0 +1,30 @@
+.filter {
+    width: 210px;
+    height: 247px;
+}
+.filter-icon {
+    margin-left: 8px; 
+    margin-right: 10px;
+}
+
+.filter-text {
+    margin-left: 10px;
+}
+
+.ion-color-marfil {
+    --ion-color-base: var(--ion-color-marfil);
+    --ion-color-base-rgb: var(--ion-color-marfil-rgb);
+    --ion-color-contrast: var(--ion-color-marfil-contrast);
+    --ion-color-contrast-rgb: var(--ion-color-marfil-contrast-rgb);
+    --ion-color-shade: var(--ion-color-marfil-shade);
+    --ion-color-tint: var(--ion-color-marfil-tint);
+  }
+
+.ion-color-carbon {
+    --ion-color-base: var(--ion-color-carbon);
+    --ion-color-base-rgb: var(--ion-color-carbon-rgb);
+    --ion-color-contrast: var(--ion-color-carbon-contrast);
+    --ion-color-contrast-rgb: var(--ion-color-carbon-contrast-rgb);
+    --ion-color-shade: var(--ion-color-carbon-shade);
+    --ion-color-tint: var(--ion-color-carbon-tint);
+  }

@@ -11,6 +11,28 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'department',
+    loadChildren: () => import('./department/department.module').then( m => m.DepartmentPageModule)
+  },  {
+    path: 'lady',
+    loadChildren: () => import('./lady/lady.module').then( m => m.LadyPageModule)
+  },
+  {
+    path: 'login',
+    loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
+  },
+  {
+    path: 'cuenta',
+    loadChildren: () => import('./cuenta/cuenta.module').then( m => m.CuentaPageModule)
+  },
+  {
+    path: 'compra',
+    loadChildren: () => import('./compra/compra.module').then( m => m.CompraPageModule)
+  }
+
+
+
 ];
 
 @NgModule({

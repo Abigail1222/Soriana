@@ -1,0 +1,22 @@
+<ion-grid>
+  <ion-text><h1 class="header"><b>Moda y accesorios</b></h1></ion-text>
+    <ion-row class="margin2">
+      <ion-col *ngFor="let fila of fila1">
+        <ion-card button="true" class="item" (click)="info(fila)">
+          <img [src]="fila.image">
+          <ion-card-title class="text">{{fila.name}}</ion-card-title>
+        </ion-card>
+      </ion-col>
+      </ion-row>
+  </ion-grid>
+  <ion-grid>
+      <ion-row class="margin2">
+        <ion-col *ngFor="let fila of fila2">
+          <ion-card button="true" class="item">
+            <img [src]="fila.image">
+            <ion-card-title class="text">{{fila.name}}</ion-card-title>
+          </ion-card>
+        </ion-col>
+        </ion-row>
+  </ion-grid>
+  

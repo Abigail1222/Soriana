@@ -123,6 +123,36 @@
   --ion-color-pasto-tint: #cbbb69;
 }
 
+/** rosa **/
+:root {
+  --ion-color-rosa: #b1625f;
+  --ion-color-rosa-rgb: 177,98,95;
+  --ion-color-rosa-contrast: #ffffff;
+  --ion-color-rosa-contrast-rgb: 255,255,255;
+  --ion-color-rosa-shade: #9c5654;
+  --ion-color-rosa-tint: #b9726f;
+}
+
+/** marfil **/
+:root {
+  --ion-color-marfil: #f2f2f2;
+  --ion-color-marfil-rgb: 242,242,242;
+  --ion-color-marfil-contrast: #000000;
+  --ion-color-marfil-contrast-rgb: 0,0,0;
+  --ion-color-marfil-shade: #d5d5d5;
+  --ion-color-marfil-tint: #f3f3f3;
+}
+
+
+/** carbon **/
+:root {
+  --ion-color-carbon: #222222;
+  --ion-color-carbon-rgb: 34,34,34;
+  --ion-color-carbon-contrast: #ffffff;
+  --ion-color-carbon-contrast-rgb: 255,255,255;
+  --ion-color-carbon-shade: #1e1e1e;
+  --ion-color-carbon-tint: #383838;
+}
 
 
 @media (prefers-color-scheme: dark) {
