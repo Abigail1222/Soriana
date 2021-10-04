@@ -29,6 +29,26 @@ const routes: Routes = [
   {
     path: 'compra',
     loadChildren: () => import('./compra/compra.module').then( m => m.CompraPageModule)
+  },
+  {
+    path: 'proceso',
+    loadChildren: () => import('./proceso/proceso.module').then( m => m.ProcesoPageModule)
+  },
+  {
+    path: 'metodo',
+    loadChildren: () => import('./metodo/metodo.module').then( m => m.MetodoPageModule)
+  },
+  {
+    path: 'promocion',
+    loadChildren: () => import('./promocion/promocion.module').then( m => m.PromocionPageModule)
+  },
+  {
+    path: 'resumen',
+    loadChildren: () => import('./resumen/resumen.module').then( m => m.ResumenPageModule)
+  },
+  {
+    path: 'confirmacion',
+    loadChildren: () => import('./confirmacion/confirmacion.module').then( m => m.ConfirmacionPageModule)
   }
 
 

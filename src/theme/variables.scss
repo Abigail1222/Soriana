@@ -154,6 +154,15 @@
   --ion-color-carbon-tint: #383838;
 }
 
+/** porcelana **/
+:root {
+  --ion-color-porcelana: #EFE7E4;
+  --ion-color-porcelana-rgb: 239,231,228;
+  --ion-color-porcelana-contrast: #000000;
+  --ion-color-porcelana-contrast-rgb: 0,0,0;
+  --ion-color-porcelana-shade: #d2cbc9;
+  --ion-color-porcelana-tint: #f1e9e7;
+}
 
 @media (prefers-color-scheme: dark) {
   /*

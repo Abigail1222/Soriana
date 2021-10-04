@@ -13,6 +13,60 @@
         </ion-col>
     </ion-row>
 </ion-grid>
+<h3><b class="carrito-title">Carrito</b></h3>
+<h5 class="carrito-subtitle">Cantidad de articulos: 1</h5>
+<ion-grid>
+    <ion-row>
+        <ion-col>
+            <ion-card class="producto-card" color="natural">
+                <ion-grid>
+                    <ion-row>
+                        <ion-col>
+                            <div><img class="articulo" [src]="blusa_rosa"></div>
+                        </ion-col>
+                        <ion-col >
+                            <h5>Blusa rosa</h5>
+                        </ion-col>
+                        <ion-col>
+                            <ion-icon class="trash" name="trash-outline"></ion-icon>
+                        </ion-col>
+                    </ion-row>
+                    <ion-row>
+                        <ion-col class="cantidad">
+                            <ion-label>Cantidad</ion-label>
+                            <ion-input style="width: 40px;" type="number" value="1" required="true"></ion-input>
+                        </ion-col>
+                        <ion-col size="2">
+                            <h4><b>$199</b></h4>
+                        </ion-col>
+                    </ion-row>
+                </ion-grid>
+            </ion-card>
+            <div style="margin-left: 80px; margin-top: 20px;" *ngIf="!show">
+                <ion-textarea placeholder="Nota" class="text-area"></ion-textarea>
+            </div>
+            <ion-button *ngIf="show" (click)="show=!show" color="porcelana" class="edit">Agregar una nota</ion-button>
+            <ion-button *ngIf="!show" (click)="show=!show" color="natural" class="edit">Guardar nota</ion-button>
+        </ion-col>
+    </ion-row>
+</ion-grid>
+<ion-grid>
+    <ion-row style="margin-left: 100px; margin-top: 30px;">
+        <ion-col style="width: 190px;">
+            <ion-button class="vaciar">
+                Vaciar carrito
+            </ion-button>
+            <ion-button  color="natural">
+                Guardar lista
+            </ion-button>
+        </ion-col>
+        <ion-col>
+            <ion-button (click)="proceso()" class="continuar" color="pasto" >
+                Continuar
+            </ion-button>
+        </ion-col>
+    </ion-row>
+</ion-grid>
   <app-footer></app-footer>
   </ion-content>
 
