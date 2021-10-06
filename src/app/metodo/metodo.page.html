@@ -52,8 +52,73 @@
           </ion-row>
         </ion-col>
     </ion-row>
-</ion-grid>
+</ion-grid >
 <h3><b class="carrito-title">Método de pago</b></h3>
-<ion-button color="pasto" (click)="promocion()">Continuar</ion-button>
+<ion-grid class="margin-toolbar">
+  <ion-row style="margin-left: 470px;">
+    <ion-col class="col-class-elegido" size="1.5">
+      <ion-row class="row-linea">
+        <ion-icon class="icons-metodo" name="card-outline"></ion-icon>
+      </ion-row>
+      <ion-row  style="height: 60px;">
+        <p><small class="label-metodo">Tarjeta de crédito/débito</small></p>
+      </ion-row>
+    </ion-col>
+    <ion-col size="0.5"></ion-col>
+    <ion-col  class="col-class"  size="1.8">
+      <ion-row class="row-linea">
+        <ion-icon class="icons-metodo" name="home-outline"></ion-icon>
+      </ion-row>
+      <ion-row  style="height: 10px;">
+        <p><small class="label-metodo">Pago contra entrega</small></p>
+      </ion-row>
+    </ion-col>
+    <ion-col  class="col-class"  size="1.5">
+      <ion-row class="row-linea">
+        <ion-icon class="icons-metodo-falabella" name="card-outline"></ion-icon>
+      </ion-row>
+      <ion-row  style="height: 30px;">
+        <p><small class="label-metodo">Tarjeta Falabella</small></p>
+      </ion-row>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+<ion-grid>
+  <ion-row class="input-tarjeta">
+    <ion-item class="input2">
+      <ion-label position="floating">Número de la tarjeta *</ion-label>
+      <ion-input required="true"></ion-input>
+    </ion-item>
+  </ion-row>
+  <ion-row class="input-tarjeta">
+    <ion-item class="input2">
+      <ion-label position="floating">Nombre la tarjeta *</ion-label>
+      <ion-input required="true"></ion-input>
+    </ion-item>
+  </ion-row>
+  <ion-row class="input-tarjeta">
+    <ion-item class="input2">
+      <ion-label position="floating">Mes y año de vencimiento *</ion-label>
+      <ion-input required="true"></ion-input>
+    </ion-item>
+  </ion-row>
+  <ion-row class="input-tarjeta">
+    <ion-item class="input2">
+      <ion-label position="floating">CVV *</ion-label>
+      <ion-input required="true"></ion-input>
+    </ion-item>
+  </ion-row>
+  <ion-row class="input-tarjeta">
+    <ion-item class="input2">
+      <ion-label position="floating">Dirección de la tarjeta *</ion-label>
+      <ion-input required="true"></ion-input>
+    </ion-item>
+  </ion-row>
+  <ion-row style="margin-left: 450px;">
+    <ion-checkbox class="label-check-terminos" color="pasto"></ion-checkbox>
+    <ion-label class="label-terminos">Guardar tarjeta</ion-label>
+  </ion-row>
+</ion-grid>
+<ion-button class="continuar-button"  color="pasto" (click)="promocion()">Continuar</ion-button>
 <app-footer></app-footer>
 </ion-content>

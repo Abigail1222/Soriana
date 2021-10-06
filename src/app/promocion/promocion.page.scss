@@ -10,6 +10,75 @@ img {
     text-decoration: blink;
 }
 
+.articulo {
+    margin-left: 7px;
+    margin-top: 7px;
+    width: 100px;
+    height: 100px;
+}
+
+.ion-color-natural {
+    --ion-color-base: var(--ion-color-natural);
+    --ion-color-base-rgb: var(--ion-color-natural-rgb);
+    --ion-color-contrast: var(--ion-color-natural-contrast);
+    --ion-color-contrast-rgb: var(--ion-color-natural-contrast-rgb);
+    --ion-color-shade: var(--ion-color-natural-shade);
+    --ion-color-tint: var(--ion-color-natural-tint);
+  }
+  .continuar-button {
+    margin-left: 620px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.puntos {
+    width: 230px;
+    height: 50px;
+}
+.label-terminos {
+    margin-left: 10px;
+}
+.label-check-terminos {
+    margin-top: 30px;
+}
+
+.carrito-title {
+    margin-left: 60px;
+    margin-top: 20px;
+    color:darkred;
+    margin-bottom: 20px;
+}
+
+.producto-card {
+    margin-left: 60px;
+    height:170px;
+    width: 400px;
+    padding-bottom: 50px;
+}
+
+.carrito-subtitle {
+    margin-left: 60px;
+}
+
+.trash {
+    width: 20px;
+    height: 20px;
+    margin-top: 15px;
+    margin-left: 90px;
+    cursor:pointer;
+    text-decoration: blink;
+}
+
+
+.ion-color-carmin {
+    --ion-color-base: var(--ion-color-carmin);
+    --ion-color-base-rgb: var(--ion-color-carmin-rgb);
+    --ion-color-contrast: var(--ion-color-carmin-contrast);
+    --ion-color-contrast-rgb: var(--ion-color-carmin-contrast-rgb);
+    --ion-color-shade: var(--ion-color-carmin-shade);
+    --ion-color-tint: var(--ion-color-carmin-tint);
+  }
+
+
 .margin-toolbar {
     margin-top: 10px;
     margin-bottom: 20px;
@@ -36,6 +105,15 @@ img {
     height: 20px;
     color:darkred;
 }
+
+.ion-color-porcelana {
+    --ion-color-base: var(--ion-color-porcelana);
+    --ion-color-base-rgb: var(--ion-color-porcelana-rgb);
+    --ion-color-contrast: var(--ion-color-porcelana-contrast);
+    --ion-color-contrast-rgb: var(--ion-color-porcelana-contrast-rgb);
+    --ion-color-shade: var(--ion-color-porcelana-shade);
+    --ion-color-tint: var(--ion-color-porcelana-tint);
+  }
 
 .icon-special {
     width: 20px;

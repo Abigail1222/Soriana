@@ -8,6 +8,7 @@ import { Router } from '@angular/router';
 })
 export class PromocionPage implements OnInit {
   flechaDer = "../assets/flecha_derecha.png";
+  blusa_rosa = "../assets/blusa_rosa.jpg";
   constructor(private route:Router) { }
 
   ngOnInit() {

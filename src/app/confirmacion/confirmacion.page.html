@@ -54,6 +54,22 @@
     </ion-row>
 </ion-grid>
 <h3><b class="carrito-title">Confirmación</b></h3>
-<ion-button color="pasto" (click)="redirect()">Regresar</ion-button>
+<ion-grid>
+  <ion-row>
+    <ion-icon class="icon-grande" name="checkbox-outline"></ion-icon>
+  </ion-row>
+  <ion-row style="margin-left: 525px;">
+    <h4><b>¡Su compra se realizó con éxito!</b></h4>
+  </ion-row>
+  <ion-row style="margin-left: 440px;">
+    <h6>Le enviaremos un correo con el recibo y detalles de su compra
+    </h6>
+  </ion-row>
+  <ion-row style="margin-left: 530px;">
+    <h6>Gracias por comprar en tiendas Soriana
+    </h6>
+  </ion-row>
+</ion-grid>
+<ion-button style="margin-left: 620px; margin-bottom: 20px;" color="rosa" (click)="redirect()">Regresar</ion-button>
 <app-footer></app-footer>
 </ion-content>
