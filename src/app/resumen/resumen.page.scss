@@ -26,9 +26,42 @@ img {
     color:darkred;
     margin-bottom: 20px;
 }
+
+.verifica {
+    margin-left: 60px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.card-verificacion {
+    height: 60px;
+    width: 260px;
+    margin-left: 50px;
+}
 .icons {
     width: 20px;
     height: 20px;
+}
+
+.icon-v {
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    margin-top: 7px;
+}
+
+.vaciar {
+    --border-color: #B11A0E;
+    --color: #B11A0E;
+    --background: #FBFBFB;
+    height: 60px;
+    width: 220px;
+    margin-top: 10px;
+}
+
+.resumen-card {
+    width: 400px;
+    height: 250px;
 }
 
 .icon-elegido {
@@ -42,6 +75,14 @@ img {
     height: 20px;
     
 }
+.ion-color-porcelana {
+    --ion-color-base: var(--ion-color-porcelana);
+    --ion-color-base-rgb: var(--ion-color-porcelana-rgb);
+    --ion-color-contrast: var(--ion-color-porcelana-contrast);
+    --ion-color-contrast-rgb: var(--ion-color-porcelana-contrast-rgb);
+    --ion-color-shade: var(--ion-color-porcelana-shade);
+    --ion-color-tint: var(--ion-color-porcelana-tint);
+  }
 
 .input2 {
     margin-top:10px;
@@ -81,4 +122,13 @@ img {
     --ion-color-contrast-rgb: var(--ion-color-pasto-contrast-rgb);
     --ion-color-shade: var(--ion-color-pasto-shade);
     --ion-color-tint: var(--ion-color-pasto-tint);
+  }
+
+  .ion-color-natural {
+    --ion-color-base: var(--ion-color-natural);
+    --ion-color-base-rgb: var(--ion-color-natural-rgb);
+    --ion-color-contrast: var(--ion-color-natural-contrast);
+    --ion-color-contrast-rgb: var(--ion-color-natural-contrast-rgb);
+    --ion-color-shade: var(--ion-color-natural-shade);
+    --ion-color-tint: var(--ion-color-natural-tint);
   }

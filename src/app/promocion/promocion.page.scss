@@ -25,6 +25,15 @@ img {
     --ion-color-shade: var(--ion-color-natural-shade);
     --ion-color-tint: var(--ion-color-natural-tint);
   }
+
+  .cupones {
+      width: 440px;
+      height: 340px;
+  }
+
+  .subtitles-row {
+      margin-left: 50px;
+  }
   .continuar-button {
     margin-left: 620px;
     margin-top: 30px;
@@ -94,6 +103,11 @@ img {
     margin-top: 20px;
     color:darkred;
     margin-bottom: 20px;
+}
+
+.input2 {
+    margin-top:40px;    
+    width: 50px;
 }
 .icons {
     width: 20px;

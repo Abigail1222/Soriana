@@ -9,6 +9,7 @@ import { Router } from '@angular/router';
 export class PromocionPage implements OnInit {
   flechaDer = "../assets/flecha_derecha.png";
   blusa_rosa = "../assets/blusa_rosa.jpg";
+  descuento: boolean = true;
   constructor(private route:Router) { }
 
   ngOnInit() {
@@ -17,4 +18,5 @@ export class PromocionPage implements OnInit {
   resumen() {
     this.route.navigate(['resumen']);
   }
+
 }
