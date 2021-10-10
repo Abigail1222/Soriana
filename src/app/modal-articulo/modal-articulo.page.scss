@@ -1,0 +1,40 @@
+.cerrar {
+    width: 30px;
+    height: 30px;
+    box-shadow: none !important;
+    cursor:pointer;
+    margin-left: 150px;
+}
+
+.editar {
+    width: 20px;
+    height: 20px;
+    box-shadow: none !important;
+    cursor:pointer;
+    margin-top: 4px;
+}
+
+.fav {
+    width: 30px;
+    height: 30px;
+    box-shadow: none !important;
+    cursor:pointer;
+    color: darkred;
+}
+
+.ion-color-pasto {
+    --ion-color-base: var(--ion-color-pasto);
+    --ion-color-base-rgb: var(--ion-color-pasto-rgb);
+    --ion-color-contrast: var(--ion-color-pasto-contrast);
+    --ion-color-contrast-rgb: var(--ion-color-pasto-contrast-rgb);
+    --ion-color-shade: var(--ion-color-pasto-shade);
+    --ion-color-tint: var(--ion-color-pasto-tint);
+  }
+
+
+img {
+    width: 300px;
+    height: 300px;
+    margin-top: 60px;
+    margin-left: 20px;
+}

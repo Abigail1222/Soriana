@@ -49,6 +49,14 @@ const routes: Routes = [
   {
     path: 'confirmacion',
     loadChildren: () => import('./confirmacion/confirmacion.module').then( m => m.ConfirmacionPageModule)
+  },
+  {
+    path: 'modal-articulo',
+    loadChildren: () => import('./modal-articulo/modal-articulo.module').then( m => m.ModalArticuloPageModule)
+  },
+  {
+    path: 'modal-carrito',
+    loadChildren: () => import('./modal-carrito/modal-carrito.module').then( m => m.ModalCarritoPageModule)
   }
 
 

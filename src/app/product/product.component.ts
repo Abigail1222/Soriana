@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ModalController, ModalOptions} from '@ionic/angular';
+import { ModalArticuloPage } from '../modal-articulo/modal-articulo.page';
 
 @Component({
   selector: 'app-product',
@@ -7,45 +9,65 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductComponent implements OnInit {
 
-  products: any;
+  products = [
+    {
+      id: 1,
+      name: "Blusa rosa",
+      image: '../assets/blusa_rosa.jpg',
+      url: '',
+      description: 'Cherokee',
+      size: '9',
+      price: '$199'
+    },
+    {
+      id: 2,
+      name: "Short",
+      image: '../assets/short.jpg',
+      url: '',
+      description: 'LEVIS',
+      size: 'M',
+      price: '$259'
+    },
+    {
+      id: 3,
+      name: "Zapatillas",
+      image: '../assets/zapatillas.png',
+      url: '',
+      description: 'Flexi',
+      size: '24',
+      price: '$239'
+    },
+    {
+      id: 4,
+      name: "Lentes",
+      image: '../assets/lentes.png',
+      url: '',
+      description: 'Panama',
+      size: 'Unitalla',
+      price: '$299'
+    }
+  ];
 
-  constructor() {
+  constructor(private modalCtrl: ModalController) {
     this.productos();
    }
 
   ngOnInit() {}
 
+  async lanzarModal(int) {
+      const myModal = await this.modalCtrl.create({
+        component: ModalArticuloPage,
+        backdropDismiss: true,
+        showBackdrop: true,
+        cssClass: 'modalArticulo',
+        componentProps: this.products[int - 1]
+      });
+
+      myModal.present();
+  }
+
   productos () {
-    this.products = [
-      {
-        name: "Blusa rosa",
-        image: '../assets/blusa_rosa.jpg',
-        url: '',
-        description: 'Rosa palo',
-        price: '$199'
-      },
-      {
-        name: "Short",
-        image: '../assets/short.jpg',
-        url: '',
-        description: 'LEVIS',
-        price: '$259'
-      },
-      {
-        name: "Zapatillas",
-        image: '../assets/zapatillas.png',
-        url: '',
-        description: 'Flexi',
-        price: '$239'
-      },
-      {
-        name: "Lentes",
-        image: '../assets/lentes.png',
-        url: '',
-        description: 'Panama',
-        price: '$299'
-      }
-    ]
+    this.products
   }
 
 }

@@ -3,7 +3,7 @@
   <ion-row class="margin-row">
     <ion-col size="2" *ngFor="let producto of products">
       <ion-card  class="item">
-        <img [src]="producto.image">
+        <img (click)="lanzarModal(producto.id)" [src]="producto.image">
       </ion-card>
       <ion-card color="marfil" class="card-background">
         <ion-card-title class="title">{{producto.name}}</ion-card-title>
