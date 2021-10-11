@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router'
-import { ModalController } from '@ionic/angular';
+import { MenuController, ModalController } from '@ionic/angular';
 import { ModalCarritoPage } from '../modal-carrito/modal-carrito.page';
 @Component({
   selector: 'app-toolbar2',
@@ -9,7 +9,7 @@ import { ModalCarritoPage } from '../modal-carrito/modal-carrito.page';
 })
 export class Toolbar2Component implements OnInit {
   sorianaLogo = "../assets/soriana-logo.png";
-  constructor(private route:Router, private modalCtrl: ModalController) { }
+  constructor(private route:Router, private modalCtrl: ModalController, private menuCtrl: MenuController) { }
 
   ngOnInit() {}
 
@@ -19,6 +19,10 @@ export class Toolbar2Component implements OnInit {
 
   login(){
     this.route.navigate(['login']);
+  }
+
+  toggleMenu() {
+    this.menuCtrl.toggle();
   }
 
   async lanzarCarrito() {

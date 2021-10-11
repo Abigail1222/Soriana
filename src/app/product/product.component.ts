@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ModalController, ModalOptions} from '@ionic/angular';
 import { ModalArticuloPage } from '../modal-articulo/modal-articulo.page';
+import { ModalCarritoPage } from '../modal-carrito/modal-carrito.page';
 
 @Component({
   selector: 'app-product',
@@ -70,4 +71,14 @@ export class ProductComponent implements OnInit {
     this.products
   }
 
+  async lanzarCarrito() {
+    const myModal = await this.modalCtrl.create({
+      component: ModalCarritoPage,
+      backdropDismiss: true,
+      showBackdrop: true,
+      cssClass: 'modalCarrito'
+    });
+
+    myModal.present();
+}
 }

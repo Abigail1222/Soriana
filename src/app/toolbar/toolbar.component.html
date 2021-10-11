@@ -1,5 +1,7 @@
 <ion-header [translucent]="true" class="ion-no-border">
+  
   <ion-toolbar color="natural">
+    <app-menu></app-menu>
     <ion-buttons slot="start">
       <ion-button><ion-icon  name="location-outline"></ion-icon>
         <ion-title size="small" style="text-transform:none">Ubica tu tienda</ion-title>
@@ -15,13 +17,14 @@
       <ion-button (click)="login()"><ion-icon slot="icon-only" name="person-circle"></ion-icon></ion-button>
     </ion-buttons>
     <ion-buttons slot="end">
-      <ion-button (click)="compra()"><ion-icon slot="icon-only" name="cart-outline"></ion-icon></ion-button>
+      <ion-button (click)="lanzarCarrito()"><ion-icon slot="icon-only" name="cart-outline"></ion-icon></ion-button>
     </ion-buttons>
   </ion-toolbar>
   <ion-toolbar class="lower">
     <ion-buttons slot="start">
-      <ion-button>
+      <ion-button (click)="toggleMenu()">
         <ion-title size="small" color="natural" style="text-transform:none">Departamentos</ion-title>
+       
       </ion-button>
       <ion-button>
         <ion-title size="small" color="natural" style="text-transform:none">Promociones</ion-title>

@@ -10,6 +10,8 @@ import { DepartmentPage } from './department.page';
 import { Toolbar2Component } from '../toolbar2/toolbar2.component';
 import { FooterComponent } from '../footer/footer.component';
 import { Item2Component } from '../item2/item2.component';
+import { ToolbarComponent } from '../toolbar/toolbar.component';
+import { MenuComponent } from '../menu/menu.component';
 
 @NgModule({
   imports: [
@@ -18,7 +20,7 @@ import { Item2Component } from '../item2/item2.component';
     IonicModule,
     DepartmentPageRoutingModule
   ],
-  exports: [DepartmentPage, Toolbar2Component, FooterComponent, Item2Component],
-  declarations: [DepartmentPage, Toolbar2Component, FooterComponent, Item2Component]
+  exports: [DepartmentPage, Toolbar2Component, FooterComponent, Item2Component,ToolbarComponent, MenuComponent],
+  declarations: [DepartmentPage, Toolbar2Component, FooterComponent, Item2Component, ToolbarComponent, MenuComponent]
 })
 export class DepartmentPageModule {}

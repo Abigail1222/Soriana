@@ -9,6 +9,7 @@ import { ResumenPageRoutingModule } from './resumen-routing.module';
 import { ResumenPage } from './resumen.page';
 import { Toolbar2Component } from '../toolbar2/toolbar2.component';
 import { FooterComponent } from '../footer/footer.component';
+import { CardProductoComponent } from '../card-producto/card-producto.component';
 
 @NgModule({
   imports: [
@@ -17,7 +18,7 @@ import { FooterComponent } from '../footer/footer.component';
     IonicModule,
     ResumenPageRoutingModule
   ],
-  declarations: [ResumenPage, Toolbar2Component, FooterComponent],
-  exports: [Toolbar2Component, FooterComponent]
+  declarations: [ResumenPage, Toolbar2Component, FooterComponent, CardProductoComponent],
+  exports: [Toolbar2Component, FooterComponent, CardProductoComponent]
 })
 export class ResumenPageModule {}

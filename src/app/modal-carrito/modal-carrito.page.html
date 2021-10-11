@@ -1,9 +1,25 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>modalCarrito</ion-title>
+  <ion-toolbar color="rosa">
+    <ion-grid>
+      <ion-row>
+        <ion-col style="margin-block-start: 5px" size="11">
+          <ion-title>Mi carrito</ion-title>
+        </ion-col>
+        <ion-col>
+           <ion-icon (click)="cerrar()" class="close" name="close-outline"></ion-icon>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
   </ion-toolbar>
 </ion-header>
-
 <ion-content>
+<app-card-producto></app-card-producto>
+<ion-item-divider style="margin-top: 160px;"></ion-item-divider>
+<div class="precios">
+  <h5><b>Subtotal: </b>$199</h5>
+<h5><b>Costo de envío: </b>$199</h5>
+<h3><b>Total: $248 </b></h3>
+</div>
+<ion-button (click)="compra()" style="margin-left: 140px;" color="pasto">Continuar con la compra</ion-button>
 
 </ion-content>

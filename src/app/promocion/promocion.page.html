@@ -76,30 +76,7 @@
 <ion-grid>
   <ion-row>
     <ion-col>
-      <ion-card class="producto-card" color="natural">
-        <ion-grid>
-            <ion-row>
-                <ion-col>
-                    <div><img class="articulo" [src]="blusa_rosa"></div>
-                </ion-col>
-                <ion-col >
-                    <h5>Blusa rosa</h5>
-                </ion-col>
-                <ion-col>
-                    <ion-icon class="trash" name="trash-outline"></ion-icon>
-                </ion-col>
-            </ion-row>
-            <ion-row>
-                <ion-col class="cantidad">
-                    <ion-label>Cantidad</ion-label>
-                    <ion-input style="width: 40px;" type="number" value="1" required="true"></ion-input>
-                </ion-col>
-                <ion-col size="2">
-                    <h4><b>$199</b></h4>
-                </ion-col>
-            </ion-row>
-        </ion-grid>
-    </ion-card>
+      <app-card-producto></app-card-producto>
     </ion-col>
     <ion-col>
       <ion-card class="cupones" color="porcelana">

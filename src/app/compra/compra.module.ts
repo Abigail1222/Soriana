@@ -9,6 +9,7 @@ import { CompraPageRoutingModule } from './compra-routing.module';
 import { CompraPage } from './compra.page';
 import { Toolbar2Component } from '../toolbar2/toolbar2.component';
 import { FooterComponent } from '../footer/footer.component';
+import { CardProductoComponent } from '../card-producto/card-producto.component';
 
 @NgModule({
   imports: [
@@ -17,8 +18,8 @@ import { FooterComponent } from '../footer/footer.component';
     IonicModule,
     CompraPageRoutingModule
   ],
-  declarations: [CompraPage, Toolbar2Component, FooterComponent],
-  exports: [Toolbar2Component, FooterComponent]
+  declarations: [CompraPage, Toolbar2Component, FooterComponent, CardProductoComponent],
+  exports: [Toolbar2Component, FooterComponent, CardProductoComponent]
   
 })
 export class CompraPageModule {}

@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { MenuController, ModalController } from '@ionic/angular';
+import { ModalCarritoPage } from '../modal-carrito/modal-carrito.page';
 
 @Component({
   selector: 'app-toolbar',
@@ -9,7 +11,7 @@ import { Router } from '@angular/router';
 export class ToolbarComponent implements OnInit {
 
   sorianaLogo = "../assets/soriana-logo.png";
-  constructor(private route:Router) { }
+  constructor(private route:Router, private modalCtrl: ModalController, private menuCtrl: MenuController) { }
 
   ngOnInit() {}
 
@@ -23,6 +25,22 @@ export class ToolbarComponent implements OnInit {
 
   compra(){
     this.route.navigate(['compra']);
+    this.modalCtrl.dismiss();
   }
+
+  toggleMenu() {
+    this.menuCtrl.toggle('principal');
+  }
+
+  async lanzarCarrito() {
+    const myModal = await this.modalCtrl.create({
+      component: ModalCarritoPage,
+      backdropDismiss: true,
+      showBackdrop: true,
+      cssClass: 'modalCarrito'
+    });
+
+    myModal.present();
+}
 }
 
