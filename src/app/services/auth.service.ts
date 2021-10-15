@@ -3,6 +3,7 @@ import { AngularFireAuth } from '@angular/fire/compat/auth';
 import {User} from '../shared/user.interface';
 import { AngularFirestore, AngularFirestoreDocument} from '@angular/fire/compat/firestore'
 import { Observable, of } from 'rxjs';
+import { switchMap } from 'rxjs/operators';
 @Injectable({
   providedIn: 'root'
 })
@@ -38,6 +39,7 @@ export class AuthService {
       console.log('Error: ', error);
     }
   }
+
   async register(email: string, password: string): Promise<User> {
     try {
       const { user } = await this.afAuth.createUserWithEmailAndPassword(email, password);
@@ -47,6 +49,7 @@ export class AuthService {
       console.log('Error->', error);
     }
   }
+
   async resetPassword(email: string): Promise<void> {
     try {
       return this.afAuth.sendPasswordResetEmail(email);
@@ -76,7 +79,3 @@ export class AuthService {
     return userRef.set(data, { merge: true });
   }
 }
-function switchMap(arg0: (user: any) => Observable<any>): import("rxjs").OperatorFunction<import("firebase/compat").default.User, User> {
-  throw new Error('Function not implemented.');
-}
-
