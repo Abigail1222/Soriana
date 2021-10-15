@@ -19,4 +19,8 @@ export class DepartmentPage implements OnInit {
     this.route.navigate(['home']);
   }
 
+  redirect2(){
+    this.route.navigate(['lady']);
+  }
+
 }

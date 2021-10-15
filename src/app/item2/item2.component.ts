@@ -24,8 +24,8 @@ export class Item2Component implements OnInit {
   filaPrimera () {
     this.fila1 = [
       {
-        name: "Dama",
-        image: '../assets/dama.jpg',
+        name: "Bebe",
+        image: '../assets/bebes.jpg',
         url: 'lady'
       },
       {
@@ -48,8 +48,9 @@ export class Item2Component implements OnInit {
         image: '../assets/niños.jpg',
       },
       {
-        name: "Bebés",
-        image: '../assets/bebes.jpg',
+        name: "Dama",
+        image: '../assets/dama.jpg',
+        url: 'lady'
       },
       {
         name: "Joyería",
@@ -62,4 +63,3 @@ export class Item2Component implements OnInit {
     this.route.navigate([menu.url]);
   }
 }
-

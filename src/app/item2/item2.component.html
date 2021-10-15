@@ -12,11 +12,10 @@
   <ion-grid>
       <ion-row class="margin2">
         <ion-col *ngFor="let fila of fila2">
-          <ion-card button="true" class="item">
+          <ion-card button="true" class="item" (click)="info(fila)">
             <img [src]="fila.image">
             <ion-card-title class="text">{{fila.name}}</ion-card-title>
           </ion-card>
         </ion-col>
         </ion-row>
   </ion-grid>
-  
