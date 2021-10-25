@@ -14,7 +14,7 @@
       <ion-col>
         <ion-item class="input">
           <ion-label position="floating">Correo Electrónico</ion-label>
-          <ion-input type="email" required="true"></ion-input>
+          <ion-input type="email" required="true" name="email2"  [(ngModel)]="email2"></ion-input>
         </ion-item>
       </ion-col>
     </ion-row>
@@ -22,9 +22,9 @@
       <ion-col>
         <ion-item class="input">
           <ion-label position="floating">Contraseña</ion-label>
-          <ion-input required="true" type="password"></ion-input>
+          <ion-input required="true" type="password" name="password2"  [(ngModel)]="password2"></ion-input>
         </ion-item>
-        <ion-label class="label-pwd">¿Olvidaste la contraseña?</ion-label>
+        <ion-label (click)="recuperacion()" class="label-pwd">¿Olvidaste la contraseña?</ion-label>
       </ion-col>
     </ion-row>
     <ion-row *ngIf="show">
@@ -32,7 +32,7 @@
       <ion-label class="recordar">Recordar</ion-label>
     </ion-row>
     <ion-row *ngIf="show">
-      <ion-button (click)="cuenta()" color="pasto" class="boton">Iniciar Sesión</ion-button>
+      <ion-button (click)="onLogin(email2, password2)" color="pasto" class="boton">Iniciar Sesión</ion-button>
     </ion-row>
     <ion-text class="campo" *ngIf="!show">* Campo Requerido</ion-text>
     <ion-row *ngIf="!show">
@@ -45,7 +45,7 @@
       <ion-col>
         <ion-item class="input2">
           <ion-label position="floating">Contraseña *</ion-label>
-          <ion-input  name="password"  [(ngModel)]="password" ></ion-input>
+          <ion-input type="password" name="password"  [(ngModel)]="password" ></ion-input>
         </ion-item>
       </ion-col>
     </ion-row>
@@ -81,7 +81,7 @@
       <ion-col>
         <ion-item class="input2">
           <ion-label position="floating">Correo electrónico *</ion-label>
-          <ion-input name="email" [(ngModel)]="email"></ion-input>
+          <ion-input type="text" name="email" [(ngModel)]="email"></ion-input>
         </ion-item>
       </ion-col>
       <ion-col>

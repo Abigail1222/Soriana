@@ -18,11 +18,16 @@ export class LoginPage implements OnInit {
     this.route.navigate(['cuenta']);
   }
 
+  recuperacion() {
+    this.route.navigate(['recuperacion']);
+  }
+
   async onRegister(email, password) {
     try {
       const user = await this.authSvc.register(email, password);
       if (user) {
-        console.log('user: ', user);
+        const isVerified = this.authSvc.isEmailVerified(user);
+        this.redirectUser(isVerified);
         
       }
     } catch (error) {
@@ -34,6 +39,10 @@ export class LoginPage implements OnInit {
     try {
       const user = await this.authSvc.login(email, password);
       if (user) {
+        
+        const isVerified = this.authSvc.isEmailVerified(user);
+        this.redirectUser(isVerified);
+  
         console.log('user: ', user);
         
       }
@@ -42,4 +51,12 @@ export class LoginPage implements OnInit {
     }
   }
 
+  private redirectUser(isVerified: boolean) {
+    if(isVerified) {
+      this.route.navigate(['cuenta']);
+    }
+    else {
+      this.route.navigate(['verificacion']);
+    }
+  }
 }

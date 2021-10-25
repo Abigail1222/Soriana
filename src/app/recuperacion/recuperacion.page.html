@@ -1,0 +1,21 @@
+<app-toolbar2></app-toolbar2>
+<ion-content>
+  <h1><b class="header" color="rosa">¿Olvidaste tu contraseña?</b></h1>
+  <ion-card color="natural" class="login-card">
+    <ion-text><h3 class="login">Ingresa tu correo</h3></ion-text>
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <ion-item class="input">
+            <ion-label position="floating" >Correo Electrónico</ion-label>
+            <ion-input type="email" required="true" name="email"  [(ngModel)]="email"></ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-button (click)="onResetPassword(email)" color="pasto" class="boton">Recuperar</ion-button>
+      </ion-row>
+    </ion-grid>
+  </ion-card>
+<app-footer></app-footer>
+</ion-content>
