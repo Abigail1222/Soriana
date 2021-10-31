@@ -1,13 +1,13 @@
-<ion-card class="producto-card" color="natural">
+<ion-card class="producto-card" color="natural" *ngFor="let item of items">
   <ion-grid>
       <ion-row>
           <ion-col size="3.5">
-              <img [src]="blusa_rosa">
+              <img [src]="item.image">
           </ion-col>
           <ion-col>
               <ion-row>
                   <ion-col>
-                      <h5><b>Blusa rosa</b></h5>
+                      <h5><b>{{item.name}}</b></h5>
                   </ion-col>
                   <ion-col>
                       <ion-icon class="trash" name="trash-outline"></ion-icon>
@@ -19,7 +19,7 @@
                     <ion-input style="width: 40px;" type="number" value="1" required="true"></ion-input>
                 </ion-col>
                 <ion-col>
-                    <h4><b>$199</b></h4>
+                    <h4><b>${{item.price}}</b></h4>
                 </ion-col>
             </ion-row>
           </ion-col>

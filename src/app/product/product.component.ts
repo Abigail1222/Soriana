@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { ModalController, ModalOptions} from '@ionic/angular';
 import { ModalArticuloPage } from '../modal-articulo/modal-articulo.page';
 import { ModalCarritoPage } from '../modal-carrito/modal-carrito.page';
+import { CartService } from '../services/cart.service';
+import { Product } from '../product.js';
 
 @Component({
   selector: 'app-product',
@@ -49,7 +51,7 @@ export class ProductComponent implements OnInit {
     }
   ];
 
-  constructor(private modalCtrl: ModalController) {
+  constructor(private modalCtrl: ModalController, private cartService: CartService) {
     this.productos();
    }
 
@@ -69,6 +71,13 @@ export class ProductComponent implements OnInit {
 
   productos () {
     this.products
+  }
+
+  addToCart(id: any) {
+    console.log(id);
+    this.cartService.addToCart(id);
+    // window.alert('Your product has been added to the cart!');
+    this.lanzarCarrito();
   }
 
   async lanzarCarrito() {

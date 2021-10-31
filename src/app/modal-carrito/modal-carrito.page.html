@@ -16,9 +16,9 @@
 <app-card-producto></app-card-producto>
 <ion-item-divider style="margin-top: 160px;"></ion-item-divider>
 <div class="precios">
-  <h5><b>Subtotal: </b>$199</h5>
-<h5><b>Costo de envío: </b>$199</h5>
-<h3><b>Total: $248 </b></h3>
+  <h5><b>Subtotal: </b>${{subtotal}}</h5>
+<h5><b>Costo de envío: </b>$49</h5>
+<h3><b>Total: ${{total}} </b></h3>
 </div>
 <ion-button (click)="compra()" style="margin-left: 140px;" color="pasto">Continuar con la compra</ion-button>
 
