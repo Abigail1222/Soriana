@@ -1,5 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { ModalController } from '@ionic/angular';
+import { ModalCarritoPage } from '../modal-carrito/modal-carrito.page';
+import { CartService } from '../services/cart.service';
 
 @Component({
   selector: 'app-modal-articulo',
@@ -15,7 +17,7 @@ export class ModalArticuloPage implements OnInit {
   @Input() price: string;
   @Input() size: string;
 
-  constructor(private modalCtrl: ModalController) { }
+  constructor(private modalCtrl: ModalController,  private cartService: CartService) { }
 
   ngOnInit() {
   }
@@ -23,4 +25,21 @@ export class ModalArticuloPage implements OnInit {
   cerrar() {
     this.modalCtrl.dismiss();
   }
+
+  addToCart(id: any) {
+    this.cartService.addToCart(id);
+    // window.alert('Your product has been added to the cart!');
+    this.lanzarCarrito();
+  }
+
+  async lanzarCarrito() {
+    const myModal = await this.modalCtrl.create({
+      component: ModalCarritoPage,
+      backdropDismiss: true,
+      showBackdrop: true,
+      cssClass: 'modalCarrito'
+    });
+
+    myModal.present();
+}
 }

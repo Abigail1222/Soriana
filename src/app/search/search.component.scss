@@ -1,18 +1,16 @@
 .background {
-    width: 1300px;
+    width: auto;
     height: 150px;
 }
 
 .text { 
-    margin: auto;
-    margin-left: 575px;
+  text-align: center;
 }
 
 .search-bar {
   --icon-color: #4d4f53;
   width: 500px;
-  margin-left: 400px;
-  margin-top:  20px;
+  margin: auto;
 }
 
 .ion-color-carmin {

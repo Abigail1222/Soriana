@@ -5,6 +5,7 @@ import { ModalCarritoPage } from '../modal-carrito/modal-carrito.page';
 import { CartService } from '../services/cart.service';
 import { Product } from '../product.js';
 
+
 @Component({
   selector: 'app-product',
   templateUrl: './product.component.html',
@@ -74,7 +75,6 @@ export class ProductComponent implements OnInit {
   }
 
   addToCart(id: any) {
-    console.log(id);
     this.cartService.addToCart(id);
     // window.alert('Your product has been added to the cart!');
     this.lanzarCarrito();

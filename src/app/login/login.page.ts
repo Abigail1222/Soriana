@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { AuthService } from '../services/auth.service';
+import { UserService } from '../services/user.service';
 
 @Component({
   selector: 'app-login',
@@ -9,7 +10,7 @@ import { AuthService } from '../services/auth.service';
 })
 export class LoginPage implements OnInit {
   show: boolean = true;
-  constructor(private route:Router, private authSvc: AuthService) { }
+  constructor(private route:Router, private authSvc: AuthService,  private userService: UserService) { }
 
   ngOnInit() {
   }
@@ -33,6 +34,10 @@ export class LoginPage implements OnInit {
     } catch (error) {
       console.log('Error', error);
     }
+  }
+
+  addUsers(name, password, first_lastname, second_lastname, password_conf, phone, email, email_conf, postal ) {
+    this.userService.addUser(name, password, first_lastname, second_lastname, password_conf, phone, email, email_conf, postal);
   }
 
   async onLogin(email, password) {

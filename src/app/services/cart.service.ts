@@ -46,10 +46,8 @@ export class CartService {
   constructor() { }
 
   addToCart(id: any) {
-    console.log(this.hardcode[id-1]);
     this.items.push(this.hardcode[id-1]);
     this.subtotal = this.subtotal + parseFloat(this.hardcode[id-1].price);
-    console.log(this.subtotal +'1');
   }
 
   getSubtotal() {

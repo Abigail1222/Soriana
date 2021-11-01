@@ -60,6 +60,7 @@ export class Item2Component implements OnInit {
   }
 
   info(menu){
+    console.log('hola');
     this.route.navigate([menu.url]);
   }
 }

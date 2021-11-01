@@ -39,7 +39,7 @@
       <ion-col>
         <ion-item class="input2">
           <ion-label position="floating">Nombre(s) *</ion-label>
-          <ion-input required="true"></ion-input>
+          <ion-input required="true" name="name"  [(ngModel)]="name"></ion-input>
         </ion-item>
       </ion-col>
       <ion-col>
@@ -53,13 +53,13 @@
       <ion-col>
         <ion-item class="input2">
           <ion-label position="floating">Apellido Paterno *</ion-label>
-          <ion-input required="true"></ion-input>
+          <ion-input required="true" name="first_lastname"  [(ngModel)]="first_lastname"></ion-input>
         </ion-item>
       </ion-col>
       <ion-col>
         <ion-item class="input2">
           <ion-label position="floating">Confirmar contraseña *</ion-label>
-          <ion-input required="true"></ion-input>
+          <ion-input required="true" name="password_conf"  [(ngModel)]="password_conf"></ion-input>
         </ion-item>
       </ion-col>
     </ion-row>
@@ -67,13 +67,13 @@
       <ion-col>
         <ion-item class="input2">
           <ion-label position="floating">Apellido Materno *</ion-label>
-          <ion-input required="true"></ion-input>
+          <ion-input required="true" name="second_lastname"  [(ngModel)]="second_lastname"></ion-input>
         </ion-item>
       </ion-col>
       <ion-col>
         <ion-item class="input2">
           <ion-label position="floating">Teléfono *</ion-label>
-          <ion-input maxlength="10" type="tel" required="true"></ion-input>
+          <ion-input maxlength="10" type="tel" required="true" name="phone"  [(ngModel)]="phone"></ion-input>
         </ion-item>
       </ion-col>
     </ion-row>
@@ -87,7 +87,7 @@
       <ion-col>
         <ion-item class="input2">
           <ion-label position="floating">Código Postal *</ion-label>
-          <ion-input maxlength="5" required="true"></ion-input>
+          <ion-input maxlength="5" required="true" name="postal"  [(ngModel)]="postal"></ion-input>
         </ion-item>
       </ion-col>
     </ion-row>
@@ -95,7 +95,7 @@
       <ion-col>
         <ion-item class="input2">
           <ion-label position="floating">Confirmar correo electrónico *</ion-label>
-          <ion-input type="email" required="true"></ion-input>
+          <ion-input type="email" required="true" name="email_conf"  [(ngModel)]="email_conf"></ion-input>
         </ion-item>
       </ion-col>
       <ion-col>
