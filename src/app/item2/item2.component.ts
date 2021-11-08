@@ -11,6 +11,7 @@ export class Item2Component implements OnInit {
   despensa = "../assets/despensa.jpg";
   flechaIzq = "../assets/flecha_izquierda.png";
   flechaDer = "../assets/flecha_derecha.png";
+  flecha = "../assets/flecha.png";
   fila1: any;
   fila2: any;
 
@@ -60,7 +61,7 @@ export class Item2Component implements OnInit {
   }
 
   info(menu){
-    console.log('hola');
+    console.log(menu);
     this.route.navigate([menu.url]);
   }
 }
