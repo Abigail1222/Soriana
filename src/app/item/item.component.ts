@@ -26,12 +26,12 @@ export class ItemComponent implements OnInit {
       {
         name: "Despensa",
         image: '../assets/despensa.jpg',
-        url: ''
+        url: 'despensa'
       },
       {
         name: "Frutas y Verduras",
         image: '../assets/frutas.jpg',
-        url: ''
+        url: 'fruta-verdura'
       },
       {
         name: "Moda y Accesorios",
@@ -41,7 +41,7 @@ export class ItemComponent implements OnInit {
       {
         name: "Farmacia",
         image: '../assets/farmacia.jpg',
-        url: ''
+        url: 'farmacia'
       }
     ]
   }

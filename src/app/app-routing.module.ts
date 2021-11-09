@@ -65,6 +65,38 @@ const routes: Routes = [
   {
     path: 'verificacion',
     loadChildren: () => import('./verificacion/verificacion.module').then( m => m.VerificacionPageModule)
+  },
+  {
+    path: 'caballero',
+    loadChildren: () => import('./caballero/caballero.module').then( m => m.CaballeroPageModule)
+  },
+  {
+    path: 'bebe',
+    loadChildren: () => import('./bebe/bebe.module').then( m => m.BebePageModule)
+  },
+  {
+    path: 'joyeria',
+    loadChildren: () => import('./joyeria/joyeria.module').then( m => m.JoyeriaPageModule)
+  },
+  {
+    path: 'zapatos',
+    loadChildren: () => import('./zapatos/zapatos.module').then( m => m.ZapatosPageModule)
+  },
+  {
+    path: 'kids',
+    loadChildren: () => import('./kids/kids.module').then( m => m.KidsPageModule)
+  },
+  {
+    path: 'despensa',
+    loadChildren: () => import('./despensa/despensa.module').then( m => m.DespensaPageModule)
+  },
+  {
+    path: 'farmacia',
+    loadChildren: () => import('./farmacia/farmacia.module').then( m => m.FarmaciaPageModule)
+  },
+  {
+    path: 'fruta-verdura',
+    loadChildren: () => import('./fruta-verdura/fruta-verdura.module').then( m => m.FrutaVerduraPageModule)
   }
 
 

@@ -21,6 +21,7 @@ export class RecuperacionPage implements OnInit {
       this.router.navigate(['login']);
     } catch (error) {
       console.log('Error->', error);
+      window.alert(error);
     }
   }
 

@@ -25,19 +25,19 @@ export class Item2Component implements OnInit {
   filaPrimera () {
     this.fila1 = [
       {
-        name: "Bebe",
+        name: "Bebés",
         image: '../assets/bebes.jpg',
-        url: 'lady'
+        url: 'bebe'
       },
       {
         name: "Caballero",
         image: '../assets/caballero.jpg',
-        url: ''
+        url: 'caballero'
       },
       {
         name: "Zapatos",
         image: '../assets/zapatos.jpg',
-        url: ''
+        url: 'zapatos'
       }
     ]
   }
@@ -47,6 +47,7 @@ export class Item2Component implements OnInit {
       {
         name: "Niños",
         image: '../assets/niños.jpg',
+        url: 'kids'
       },
       {
         name: "Dama",
@@ -56,12 +57,12 @@ export class Item2Component implements OnInit {
       {
         name: "Joyería",
         image: '../assets/joyeria.jpg',
+        url: 'joyeria'
       }
     ]
   }
 
   info(menu){
-    console.log(menu);
     this.route.navigate([menu.url]);
   }
 }

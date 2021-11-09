@@ -25,7 +25,7 @@
           </ion-card>
         </ion-col>
         <ion-col *ngFor="let ser of fila1">
-          <ion-card button="true" class="item">
+          <ion-card button="true" class="item" (click)="info(ser)">
             <img [src]="ser.image">
             <ion-card-title class="text">{{ser.name}}</ion-card-title>
           </ion-card>
