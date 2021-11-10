@@ -339,6 +339,18 @@ export class CartService {
     this.subtotal = this.subtotal + parseFloat(this.hardcode[id-1].price);
   }
 
+  removeProduct(id: any) {
+    const index = this.items.indexOf(id);
+    if (index > -1) {
+      this.items.splice(index, 1);
+    }
+    this.subtotal = this.subtotal - parseFloat(this.hardcode[id-1].price);
+  }
+
+  emptyCart() {
+    this.items.length = 0;
+  }
+
   getSubtotal() {
     return this.subtotal;
   }

@@ -15,15 +15,15 @@ export class ModalCarritoPage implements OnInit {
   constructor(private modalCtrl: ModalController, private route:Router, private cartService: CartService) { }
 
   ngOnInit() {
-    console.log(this.subtotal);
   }
 
+  
   cerrar() {
     this.modalCtrl.dismiss();
   }
 
   compra(){
-    this.modalCtrl.dismiss();
     this.route.navigate(['compra']);
+    this.modalCtrl.dismiss();
   }
 }

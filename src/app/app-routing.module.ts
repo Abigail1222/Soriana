@@ -97,6 +97,10 @@ const routes: Routes = [
   {
     path: 'fruta-verdura',
     loadChildren: () => import('./fruta-verdura/fruta-verdura.module').then( m => m.FrutaVerduraPageModule)
+  },
+  {
+    path: 'articulo2',
+    loadChildren: () => import('./articulo2/articulo2.module').then( m => m.Articulo2PageModule)
   }
 
 

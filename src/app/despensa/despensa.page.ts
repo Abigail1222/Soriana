@@ -4,6 +4,7 @@ import { ModalController } from '@ionic/angular';
 import { ModalArticuloPage } from '../modal-articulo/modal-articulo.page';
 import { ModalCarritoPage } from '../modal-carrito/modal-carrito.page';
 import { CartService } from '../services/cart.service';
+import { Articulo2Page } from '../articulo2/articulo2.page';
 
 @Component({
   selector: 'app-despensa',
@@ -68,7 +69,7 @@ export class DespensaPage implements OnInit {
 
   async lanzarModal(int) {
     const myModal = await this.modalCtrl.create({
-      component: ModalArticuloPage,
+      component: Articulo2Page,
       backdropDismiss: true,
       showBackdrop: true,
       cssClass: 'modalArticulo',

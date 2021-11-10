@@ -2,7 +2,11 @@ img {
     width: 24px;
     height: 24px;
 }
-
+.align {
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+  }
 .margins {
     margin-left: 50px;
     margin-top: 50px;

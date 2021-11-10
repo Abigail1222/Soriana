@@ -10,7 +10,7 @@
                       <h5><b>{{item.name}}</b></h5>
                   </ion-col>
                   <ion-col>
-                      <ion-icon class="trash" name="trash-outline"></ion-icon>
+                      <ion-icon (click)="deleteProduct(item.id)" class="trash" name="trash-outline"></ion-icon>
                   </ion-col>
               </ion-row>
               <ion-row>

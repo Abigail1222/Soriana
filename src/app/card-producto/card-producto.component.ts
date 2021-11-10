@@ -12,7 +12,10 @@ export class CardProductoComponent implements OnInit {
   constructor(private cartService: CartService) { }
 
   ngOnInit() {
-    console.log(this.items);
+  }
+
+  deleteProduct(id: any) {
+    this.cartService.removeProduct(id);
   }
 
 }

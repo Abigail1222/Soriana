@@ -42,7 +42,46 @@
             <ion-button (click)="addToCart(producto.id)" color="pasto"  class="button">Agregar</ion-button>
           </ion-col>
           <ion-col class="margin-filter">
-            <app-filter></app-filter>
+            <ion-card class="filter">
+              <h4 class="filter-text"><ion-icon class="filter-icon" name="filter-outline"></ion-icon>Filtrar por</h4>
+            <ion-item class="label-f">
+              <ion-label >Categorías</ion-label>
+              <ion-select multiple="true" cancelText="Cancelar" okText="Aplicar">
+                <ion-select-option value="blusas">Camisa</ion-select-option>
+                <ion-select-option value="shorts">Playeras</ion-select-option>
+                <ion-select-option value="zapatos">Saco</ion-select-option>
+                <ion-select-option value="vestidos">Cinturón</ion-select-option>
+              </ion-select>
+            </ion-item>
+            <ion-item class="label-f">
+              <ion-label >Precio</ion-label>
+              <ion-select multiple="true" cancelText="Cancelar" okText="Aplicar">
+                <ion-select-option value="menor">0 a 99</ion-select-option>
+                <ion-select-option value="medio">100 a 249</ion-select-option>
+                <ion-select-option value="mayor">249 a 599</ion-select-option>
+                <ion-select-option value="alto">Mas de 599</ion-select-option>
+              </ion-select>
+            </ion-item>
+            <ion-item class="label-f">
+              <ion-label>Marca</ion-label>
+              <ion-select multiple="true" cancelText="Cancelar" okText="Aplicar">
+                <ion-select-option value="flexi">Bazzar</ion-select-option>
+                <ion-select-option value="oggi">Marvel</ion-select-option>
+                <ion-select-option value="kangaroo">T&H</ion-select-option>
+                <ion-select-option value="kangaroo">Buffway</ion-select-option>
+              </ion-select>
+            </ion-item>
+            <ion-item class="label-f">
+              <ion-label>Talla</ion-label>
+              <ion-select multiple="true" cancelText="Cancelar" okText="Aplicar">
+                <ion-select-option value="xs">XS</ion-select-option>
+                <ion-select-option value="s">S</ion-select-option>
+                <ion-select-option value="m">M</ion-select-option>
+                <ion-select-option value="g">L</ion-select-option>
+                <ion-select-option value="xl">XL</ion-select-option>
+              </ion-select>
+            </ion-item>
+            </ion-card>
           </ion-col>
         </ion-row>
       </ion-grid>

@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { ModalController } from '@ionic/angular';
 import { ModalArticuloPage } from '../modal-articulo/modal-articulo.page';
+import { Articulo2Page } from '../articulo2/articulo2.page';
 import { ModalCarritoPage } from '../modal-carrito/modal-carrito.page';
 import { CartService } from '../services/cart.service';
 
@@ -67,7 +68,7 @@ export class FrutaVerduraPage implements OnInit {
 
   async lanzarModal(int) {
     const myModal = await this.modalCtrl.create({
-      component: ModalArticuloPage,
+      component: Articulo2Page,
       backdropDismiss: true,
       showBackdrop: true,
       cssClass: 'modalArticulo',
