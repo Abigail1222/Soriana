@@ -31,6 +31,7 @@ export class Articulo2Page implements OnInit {
   addToCart(id: any) {
     this.cartService.addToCart(id);
     // window.alert('Your product has been added to the cart!');
+    this.modalCtrl.dismiss();
     this.lanzarCarrito();
   }
 
