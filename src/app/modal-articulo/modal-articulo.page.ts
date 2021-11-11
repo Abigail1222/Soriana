@@ -30,6 +30,7 @@ export class ModalArticuloPage implements OnInit {
     this.cartService.addToCart(id);
     // window.alert('Your product has been added to the cart!');
     this.lanzarCarrito();
+    this.modalCtrl.dismiss();
   }
 
   async lanzarCarrito() {
@@ -41,5 +42,6 @@ export class ModalArticuloPage implements OnInit {
     });
 
     myModal.present();
+    
 }
 }

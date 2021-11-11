@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { ChangeDetectorRef, Component, OnInit, AfterViewInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { ModalController } from '@ionic/angular';
 import { CartService } from '../services/cart.service';
@@ -12,11 +12,14 @@ export class ModalCarritoPage implements OnInit {
   subtotal = this.cartService.getSubtotal().toString();
   total = this.cartService.getSubtotal()+49;
 
-  constructor(private modalCtrl: ModalController, private route:Router, private cartService: CartService) { }
+  constructor(private cdr: ChangeDetectorRef, private modalCtrl: ModalController, private route:Router, private cartService: CartService) { }
 
   ngOnInit() {
   }
 
+  ngAfterViewInit() {
+    this.cdr.detectChanges();
+  }
   
   cerrar() {
     this.modalCtrl.dismiss();
@@ -25,5 +28,9 @@ export class ModalCarritoPage implements OnInit {
   compra(){
     this.route.navigate(['compra']);
     this.modalCtrl.dismiss();
+  }
+
+  eliminar() {
+    this.cartService.emptyCart();
   }
 }

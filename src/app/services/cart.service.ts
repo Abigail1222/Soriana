@@ -340,15 +340,23 @@ export class CartService {
   }
 
   removeProduct(id: any) {
-    const index = this.items.indexOf(id);
-    if (index > -1) {
-      this.items.splice(index, 1);
+    var i=0;
+    while (i < this.items.length) {
+      if (this.items[i].id === id) {
+        this.items.splice(i, 1);
+      } else {
+        ++i;
+      }
     }
+ 
     this.subtotal = this.subtotal - parseFloat(this.hardcode[id-1].price);
+    console.log(this.items);
   }
 
   emptyCart() {
     this.items.length = 0;
+    this.subtotal = 0;
+    console.log(this.items);
   }
 
   getSubtotal() {
