@@ -51,8 +51,13 @@ export class LoginPage implements OnInit {
         console.log('user: ', user);
         
       }
+      else {
+        window.alert('Uno o más datos son incorrectos');
+      }
     } catch (error) {
+      
       console.log('Error', error);
+      
     }
   }
 
