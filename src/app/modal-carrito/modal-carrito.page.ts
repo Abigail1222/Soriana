@@ -30,7 +30,20 @@ export class ModalCarritoPage implements OnInit {
     this.modalCtrl.dismiss();
   }
 
+  actualizar(){
+    this.subtotal = this.cartService.getSubtotal().toString();
+    this.total = this.cartService.getSubtotal()+49;
+  }
+
   eliminar() {
     this.cartService.emptyCart();
+    this.actualizar();
+    
+  }
+
+  deleteProduct(id: any) {
+    this.cartService.removeProduct(id);
+    this.actualizar();
+    
   }
 }

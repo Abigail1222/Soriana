@@ -348,9 +348,7 @@ export class CartService {
         ++i;
       }
     }
- 
     this.subtotal = this.subtotal - parseFloat(this.hardcode[id-1].price);
-    console.log(this.items);
   }
 
   emptyCart() {
@@ -367,8 +365,5 @@ export class CartService {
     return this.items;
   }
 
-  clearCart() {
-    this.items = [];
-    return this.items;
-  }
+
 }
