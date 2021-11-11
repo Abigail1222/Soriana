@@ -1,6 +1,6 @@
 <app-toolbar2></app-toolbar2>
 <ion-content [fullscreen]="true">
-  <ion-grid class="margin-toolbar">
+  <ion-grid class="ion-align-items-center">
     <ion-row class=".ion-justify-content-start">
         <ion-col (click)="redirect()" size="1" >
             <ion-text class="margins">Inicio</ion-text>
@@ -53,116 +53,118 @@
         </ion-col>
     </ion-row>
 </ion-grid>
-<h3><b class="carrito-title">Datos de envío</b></h3>
-<h5 class="carrito-subtitle">Dirección</h5>
-<ion-grid>
-  <ion-row>
-    <ion-col>
-      <ion-item class="input2">
-        <ion-label position="floating">Nombre de la dirección *</ion-label>
-        <ion-input required="true"></ion-input>
-      </ion-item>
-    </ion-col>
-    <ion-col>
-      <ion-item class="input2">
-        <ion-label position="floating">Calle *</ion-label>
-        <ion-input required="true"></ion-input>
-      </ion-item>
-    </ion-col>
-  </ion-row>
-  <ion-row>
-    <ion-col>
-      <ion-item class="input2">
-        <ion-label position="floating">Nombre de quien recibe *</ion-label>
-        <ion-input required="true"></ion-input>
-      </ion-item>
-    </ion-col>
-    <ion-col>
-      <ion-item class="input2">
-        <ion-label position="floating">Número exterior *</ion-label>
-        <ion-input required="true"></ion-input>
-      </ion-item>
-    </ion-col>
-  </ion-row>
-  <ion-row>
-    <ion-col>
-      <ion-item class="input2">
-        <ion-label position="floating">Código Postal *</ion-label>
-        <ion-input required="true"></ion-input>
-      </ion-item>
-    </ion-col>
-    <ion-col>
-      <ion-item class="input2">
-        <ion-label position="floating">Número interior *</ion-label>
-        <ion-input required="true"></ion-input>
-      </ion-item>
-    </ion-col>
-  </ion-row>
-  <ion-row>
-    <ion-col>
-      <ion-item class="input2">
-        <ion-label position="floating">Estado *</ion-label>
-        <ion-input required="true"></ion-input>
-      </ion-item>
-    </ion-col>
-    <ion-col>
-      <ion-item class="input2">
-        <ion-label position="floating">Referencias *</ion-label>
-        <ion-input required="true"></ion-input>
-      </ion-item>
-    </ion-col>
-  </ion-row>
-  <ion-row>
-    <ion-col>
-      <ion-item class="input2">
-        <ion-label position="floating">Municipio/Alcaldía *</ion-label>
-        <ion-input required="true"></ion-input>
-      </ion-item>
-    </ion-col>
-    <ion-col>
-      <ion-item class="input2">
-        <ion-label position="floating">Teléfono *</ion-label>
-        <ion-input required="true"></ion-input>
-      </ion-item>
-    </ion-col>
-  </ion-row>
-  <ion-row>
-    <ion-col size="6.35" >
-      <ion-item class="input2">
-        <ion-label position="floating">Colonia*</ion-label>
-        <ion-input required="true"></ion-input>
-      </ion-item>
-    </ion-col>
-    <ion-col style="margin-top: 15px" size="2">
-      <ion-item style="width: 200px; ">
-        <ion-label>Día</ion-label>
-        <ion-select multiple="false" cancelText="Cancelar" okText="Aceptar">
-          <ion-select-option value="lunes">Lunes</ion-select-option>
-          <ion-select-option value="martes">Martes</ion-select-option>
-          <ion-select-option value="miercoles">Miércoles</ion-select-option>
-          <ion-select-option value="jueves">Jueves</ion-select-option>
-          <ion-select-option value="viernes">Viernes</ion-select-option>
-          <ion-select-option value="sabado">Sábado</ion-select-option>
-          <ion-select-option value="domingo">Domingo</ion-select-option>
-        </ion-select>
-      </ion-item>
-    </ion-col>
-    <ion-col style="margin-top: 15px" size="2">
-      <ion-item style="width: 150px; margin-left: 10px;">
-        <ion-label>Hora</ion-label>
-        <ion-select multiple="false" cancelText="Cancelar" okText="Aceptar">
-          <ion-select-option value="12">12:00 pm</ion-select-option>
-          <ion-select-option value="1">1:00 pm</ion-select-option>
-          <ion-select-option value="2">2:00 pm</ion-select-option>
-          <ion-select-option value="3">3:00 pm</ion-select-option>
-          <ion-select-option value="4">4:00 pm</ion-select-option>
-          <ion-select-option value="5">5:00 pm</ion-select-option>
-          <ion-select-option value="6">6:00 pm</ion-select-option>
-        </ion-select>
-      </ion-item>
-    </ion-col>
-  </ion-row>
-</ion-grid>
-<ion-button color="pasto" (click)="metodo()" class="continue">Continuar</ion-button>
+<h3 class="carrito-title"><b >Datos de envío</b></h3>
+<div class="align">
+  <ion-card color="natural" class="login-card">
+    <ion-row class="row-style">
+      <ion-col>
+        <ion-text><h3 class="login">Dirección</h3></ion-text>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-item class="input2">
+          <ion-label position="floating">Nombre de la dirección *</ion-label>
+          <ion-input required="true" name="name"  [(ngModel)]="name"></ion-input>
+        </ion-item>
+      </ion-col>
+      <ion-col>
+        <ion-item class="input2">
+          <ion-label position="floating">Calle *</ion-label>
+          <ion-input type="password" name="password"  [(ngModel)]="password" ></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row *ngIf="!show">
+      <ion-col>
+        <ion-item class="input2">
+          <ion-label position="floating">Número exterior *</ion-label>
+          <ion-input required="true" name="first_lastname"  [(ngModel)]="first_lastname"></ion-input>
+        </ion-item>
+      </ion-col>
+      <ion-col>
+        <ion-item class="input2">
+          <ion-label position="floating">Código Postal *</ion-label>
+          <ion-input required="true" name="password_conf"  [(ngModel)]="password_conf"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row *ngIf="!show">
+      <ion-col>
+        <ion-item class="input2">
+          <ion-label position="floating">Número interior *</ion-label>
+          <ion-input required="true" name="second_lastname"  [(ngModel)]="second_lastname"></ion-input>
+        </ion-item>
+      </ion-col>
+      <ion-col>
+        <ion-item class="input2">
+          <ion-label position="floating">Estado *</ion-label>
+          <ion-input maxlength="10" type="tel" required="true" name="phone"  [(ngModel)]="phone"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row *ngIf="!show">
+      <ion-col>
+        <ion-item class="input2">
+          <ion-label position="floating">Referencias *</ion-label>
+          <ion-input type="text" name="email" [(ngModel)]="email"></ion-input>
+        </ion-item>
+      </ion-col>
+      <ion-col>
+        <ion-item class="input2">
+          <ion-label position="floating">Municipio o alcaldía *</ion-label>
+          <ion-input maxlength="5" required="true" name="postal"  [(ngModel)]="postal"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row *ngIf="!show">
+      <ion-col>
+        <ion-item class="input2">
+          <ion-label position="floating">Teléfono *</ion-label>
+          <ion-input type="email" required="true" name="email_conf"  [(ngModel)]="email_conf"></ion-input>
+        </ion-item>
+      </ion-col>
+      <ion-col>
+        <ion-item class="input2">
+          <ion-label position="floating">Colonia *</ion-label>
+          <ion-input type="email" required="true" name="email_conf"  [(ngModel)]="email_conf"></ion-input>
+        </ion-item>
+      </ion-col>
+      <ion-col>
+        <ion-item class="input2">
+          <ion-label>Día</ion-label>
+          <ion-select multiple="false" cancelText="Cancelar" okText="Aceptar">
+            <ion-select-option value="lunes">Lunes</ion-select-option>
+            <ion-select-option value="martes">Martes</ion-select-option>
+            <ion-select-option value="miercoles">Miércoles</ion-select-option>
+            <ion-select-option value="jueves">Jueves</ion-select-option>
+            <ion-select-option value="viernes">Viernes</ion-select-option>
+            <ion-select-option value="sabado">Sábado</ion-select-option>
+            <ion-select-option value="domingo">Domingo</ion-select-option>
+          </ion-select>
+        </ion-item>
+      </ion-col>
+      <ion-col>
+        <ion-item class="input2">
+          <ion-label>Hora</ion-label>
+          <ion-select multiple="false" cancelText="Cancelar" okText="Aceptar">
+            <ion-select-option value="12">12:00 pm</ion-select-option>
+            <ion-select-option value="1">1:00 pm</ion-select-option>
+            <ion-select-option value="2">2:00 pm</ion-select-option>
+            <ion-select-option value="3">3:00 pm</ion-select-option>
+            <ion-select-option value="4">4:00 pm</ion-select-option>
+            <ion-select-option value="5">5:00 pm</ion-select-option>
+            <ion-select-option value="6">6:00 pm</ion-select-option>
+          </ion-select>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row *ngIf="!show">
+      <ion-button (click)="metodo()" class="create" color="pasto">
+        Continuar
+      </ion-button>
+    </ion-row>
+  </ion-card>
+</div>
   <app-footer></app-footer>
   </ion-content>

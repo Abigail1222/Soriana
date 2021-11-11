@@ -17,6 +17,12 @@ img {
     height: 100px;
 }
 
+.align {
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+  }
+
 .ion-color-natural {
     --ion-color-base: var(--ion-color-natural);
     --ion-color-base-rgb: var(--ion-color-natural-rgb);
@@ -35,7 +41,7 @@ img {
       margin-left: 50px;
   }
   .continuar-button {
-    margin-left: 620px;
+    margin-left: 450px;
     margin-top: 30px;
     margin-bottom: 30px;
 }
@@ -51,10 +57,10 @@ img {
 }
 
 .carrito-title {
-    margin-left: 60px;
-    margin-top: 20px;
+    text-align: center;
     color:darkred;
     margin-bottom: 20px;
+    margin-top: 30px;
 }
 
 .producto-card {

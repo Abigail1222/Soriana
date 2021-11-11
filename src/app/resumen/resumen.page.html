@@ -53,118 +53,124 @@
         </ion-col>
     </ion-row>
 </ion-grid>
-<h3><b class="carrito-title">Resumen</b></h3>
+
+<div class="align">
+  <ion-card style="width: 1300px; height: 600px; margin-bottom: 30px;">
+    <h3 class="carrito-title"><b>Resumen</b></h3>
 <h6 class="verifica">Verifica que tus datos sean correctos</h6>
-<ion-grid>
- <ion-row>
-   <ion-col>
-    <ion-row>
-      <ion-col size="6.5">
-        <ion-card color="porcelana" class="card-verificacion">
-          <ion-grid>
-            <ion-row>
-              <ion-col size="3.5">
-                <ion-icon class="icon-v" name="card-outline"></ion-icon>
-              </ion-col>
-              <ion-col>
-                <h5>Tarjeta de débito</h5>
-              </ion-col>
-            </ion-row>
-          </ion-grid>
-        </ion-card>
-      </ion-col>
-      <ion-col>
-        <ion-button class="vaciar">Cambiar método</ion-button>
-      </ion-col>
-    </ion-row>
-    <ion-row>
-      <ion-col size="6.5">
-        <ion-card color="porcelana" class="card-verificacion">
-          <ion-grid>
-            <ion-row>
-              <ion-col size="3.5">
-                <ion-icon class="icon-v" name="home-outline"></ion-icon>
-              </ion-col>
-              <ion-col>
-                <h5>Benito Juárez 277</h5>
-              </ion-col>
-            </ion-row>
-          </ion-grid>
-        </ion-card>
-      </ion-col>
-      <ion-col>
-        <ion-button class="vaciar">Cambiar dirección</ion-button>
-      </ion-col>
-    </ion-row>
-    <ion-row>
-      <ion-col size="6.5">
-        <ion-card color="porcelana" class="card-verificacion">
-          <ion-grid>
-            <ion-row>
-              <ion-col size="3.5">
-                <ion-icon class="icon-v" name="calendar-outline"></ion-icon>
-              </ion-col>
-              <ion-col>
-                <h5>2 de octubre, 16:00</h5>
-              </ion-col>
-            </ion-row>
-          </ion-grid>
-        </ion-card>
-      </ion-col>
-      <ion-col>
-        <ion-button class="vaciar">Cambiar horario</ion-button>
-      </ion-col>
-    </ion-row>
-   </ion-col>
-   <ion-col>
-     <ion-card color="natural" class="resumen-card">
-       <ion-title style="margin-top: 15px;"><b>Resumen</b></ion-title>
-       <ion-grid>
-         <ion-row class="row-resumen">
-           <ion-col>
-             <h6>Número de artículos:</h6>
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+         <ion-row>
+           <ion-col size="6.5">
+             <ion-card color="porcelana" class="card-verificacion">
+               <ion-grid>
+                 <ion-row>
+                   <ion-col size="3.5">
+                     <ion-icon class="icon-v" name="card-outline"></ion-icon>
+                   </ion-col>
+                   <ion-col>
+                     <h5>Tarjeta de débito</h5>
+                   </ion-col>
+                 </ion-row>
+               </ion-grid>
+             </ion-card>
            </ion-col>
            <ion-col>
-             <h6>1</h6>
+             <ion-button class="vaciar">Cambiar método</ion-button>
            </ion-col>
          </ion-row>
-         <ion-row class="row-resumen">
-          <ion-col>
-            <h6>Puntos generados:</h6>
-          </ion-col>
-          <ion-col>
-            <h6>25 pts</h6>
-          </ion-col>
-        </ion-row>
-        <ion-row class="row-subtotal">
-          <ion-col size="5.1">
-            <h6><b>Subtotal: </b></h6>
-          </ion-col>
-          <ion-col >
-            <h6>$199</h6>
-          </ion-col>
-        </ion-row>
-        <ion-row class="row-subtotal">
-          <ion-col size="5.1">
-            <h6><b>Envío: </b></h6>
-          </ion-col>
-          <ion-col >
-            <h6>$0</h6>
-          </ion-col>
-        </ion-row>
-        <ion-row class="row-subtotal">
-          <ion-col size="5.1">
-            <h6><b>Total: </b></h6>
-          </ion-col>
-          <ion-col >
-            <h6>$199</h6>
-          </ion-col>
-        </ion-row>
-       </ion-grid>
-     </ion-card>
-   </ion-col>
- </ion-row>
-</ion-grid>
-<ion-button class="callToAction" color="pasto" (click)="confirmacion()">Continuar</ion-button>
+         <ion-row>
+           <ion-col size="6.5">
+             <ion-card color="porcelana" class="card-verificacion">
+               <ion-grid>
+                 <ion-row>
+                   <ion-col size="3.5">
+                     <ion-icon class="icon-v" name="home-outline"></ion-icon>
+                   </ion-col>
+                   <ion-col>
+                     <h5>Benito Juárez 277</h5>
+                   </ion-col>
+                 </ion-row>
+               </ion-grid>
+             </ion-card>
+           </ion-col>
+           <ion-col>
+             <ion-button class="vaciar">Cambiar dirección</ion-button>
+           </ion-col>
+         </ion-row>
+         <ion-row>
+           <ion-col size="6.5">
+             <ion-card color="porcelana" class="card-verificacion">
+               <ion-grid>
+                 <ion-row>
+                   <ion-col size="3.5">
+                     <ion-icon class="icon-v" name="calendar-outline"></ion-icon>
+                   </ion-col>
+                   <ion-col>
+                     <h5>2 de octubre, 16:00</h5>
+                   </ion-col>
+                 </ion-row>
+               </ion-grid>
+             </ion-card>
+           </ion-col>
+           <ion-col>
+             <ion-button class="vaciar">Cambiar horario</ion-button>
+           </ion-col>
+         </ion-row>
+        </ion-col>
+        <ion-col>
+          <ion-card color="natural" class="resumen-card">
+            <ion-title style="margin-top: 15px;"><b>Resumen</b></ion-title>
+            <ion-grid>
+              <ion-row class="row-resumen">
+                <ion-col>
+                  <h6>Número de artículos:</h6>
+                </ion-col>
+                <ion-col>
+                  <h6>1</h6>
+                </ion-col>
+              </ion-row>
+              <ion-row class="row-resumen">
+               <ion-col>
+                 <h6>Puntos generados:</h6>
+               </ion-col>
+               <ion-col>
+                 <h6>25 pts</h6>
+               </ion-col>
+             </ion-row>
+             <ion-row class="row-subtotal">
+               <ion-col size="5.1">
+                 <h6><b>Subtotal: </b></h6>
+               </ion-col>
+               <ion-col >
+                 <h6>$199</h6>
+               </ion-col>
+             </ion-row>
+             <ion-row class="row-subtotal">
+               <ion-col size="5.1">
+                 <h6><b>Envío: </b></h6>
+               </ion-col>
+               <ion-col >
+                 <h6>$0</h6>
+               </ion-col>
+             </ion-row>
+             <ion-row class="row-subtotal">
+               <ion-col size="5.1">
+                 <h6><b>Total: </b></h6>
+               </ion-col>
+               <ion-col >
+                 <h6>$199</h6>
+               </ion-col>
+             </ion-row>
+            </ion-grid>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+     </ion-grid>
+     <ion-button class="callToAction" color="pasto" (click)="confirmacion()">Continuar</ion-button>
+  </ion-card>
+</div>
+
   <app-footer></app-footer>
 </ion-content>

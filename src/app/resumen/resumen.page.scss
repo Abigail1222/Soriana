@@ -16,19 +16,26 @@ img {
     margin-left: 23px;
 }
 
+.align {
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+  }
+
+
 .carrito-subtitle {
     margin-left: 60px;
 }
 
 .carrito-title {
-    margin-left: 60px;
+    text-align: center;
     margin-top: 20px;
     color:darkred;
     margin-bottom: 20px;
 }
 
 .verifica {
-    margin-left: 60px;
+    text-align: center;
     margin-top: 20px;
     margin-bottom: 20px;
 }

@@ -16,6 +16,12 @@ img {
     margin-top: 15px;
 }
 
+.align {
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+  }
+  
 .favorite {
     margin-left: 10px;
     width: 25px;
