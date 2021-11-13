@@ -10,6 +10,7 @@ import { Router } from '@angular/router';
 })
 export class AuthService {
   public user$: Observable<User>;
+  bandera = 0;
 
   constructor(public afAuth: AngularFireAuth, private afs: AngularFirestore) { 
     this.user$ = this.afAuth.authState.pipe(
@@ -22,10 +23,15 @@ export class AuthService {
     );
   }
 
- 
+  getBandera() {
+    return this.bandera;
+  }
+  
   async logout(): Promise<void> {
     try{
+      this.bandera=0;
       await this.afAuth.signOut();
+      
     }
     catch(error) {
       console.log('Error: ', error)
@@ -34,8 +40,8 @@ export class AuthService {
   async login(email: string, password: string): Promise<User> {
     try {
       const { user } = await this.afAuth.signInWithEmailAndPassword(email, password);
-      
       this.updateUserData(user);
+      this.bandera = 1;
       return user;
     } catch (error) {
       console.log('Error: ', error);

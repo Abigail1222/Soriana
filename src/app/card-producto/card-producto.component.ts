@@ -20,7 +20,6 @@ export class CardProductoComponent implements OnInit {
 
   deleteProduct(id: any) {
     this.cartService.removeProduct(id);
-    this.carrito.actualizar();
     
   }
 

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { AuthService } from '../services/auth.service';
 
 @Component({
   selector: 'app-cuenta',
@@ -9,7 +11,7 @@ export class CuentaPage implements OnInit {
   show: boolean = true;
   pedidos: any;
   direcciones: any;
-  constructor() {
+  constructor(private authSvc: AuthService, private route:Router ) {
     this.pedidosMostrar();
     this.direccionesMostrar();
   }
@@ -50,5 +52,13 @@ export class CuentaPage implements OnInit {
       estado: "Nuevo León"
     },
   ]
+  }
+  
+  cerrarSesion(){
+    var answer = window.confirm("¿Está seguro de querer salir?");
+    if (answer) {
+      this.authSvc.logout();
+      this.route.navigate(['home']);
+    }
   }
 }
