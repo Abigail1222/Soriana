@@ -13,7 +13,7 @@ export const environment = {
     messagingSenderId: '770625828430',
     measurementId: 'G-91J1F4FY6F',
   },
-  production: false,
+  production: true,
   firebaseConfig : {
     apiKey: "AIzaSyAYn0ToBsDgfonV9f1uFmzQj0-GiMdMuE8",
     authDomain: "soriana-9b5fb.firebaseapp.com",
