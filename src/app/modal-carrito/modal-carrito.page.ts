@@ -1,6 +1,7 @@
 import { ChangeDetectorRef, Component, OnInit, AfterViewInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { ModalController } from '@ionic/angular';
+import { AuthService } from '../services/auth.service';
 import { CartService } from '../services/cart.service';
 @Component({
   selector: 'app-modal-carrito',
@@ -12,7 +13,7 @@ export class ModalCarritoPage implements OnInit {
   subtotal = this.cartService.getSubtotal().toString();
   total = this.cartService.getSubtotal()+49;
 
-  constructor(private cdr: ChangeDetectorRef, private modalCtrl: ModalController, private route:Router, private cartService: CartService) { }
+  constructor(private authSvc: AuthService, private cdr: ChangeDetectorRef, private modalCtrl: ModalController, private route:Router, private cartService: CartService) { }
 
   ngOnInit() {
   }
@@ -26,8 +27,23 @@ export class ModalCarritoPage implements OnInit {
   }
 
   compra(){
-    this.route.navigate(['compra']);
-    this.modalCtrl.dismiss();
+    let number = this.cartService.getNumberItems();
+    let estatus = this.authSvc.getEstatusLogin();
+    if(number > 0 && estatus == true ) {
+      this.route.navigate(['compra']);
+      this.modalCtrl.dismiss();
+    }
+    if(number == 0 && estatus == true ) {
+      window.alert("El carrito está vacío");
+    }
+    if(number == 0 && estatus == false ) {
+      window.alert("El carrito está vacío y debe iniciar sesión");
+    }
+    if(number > 0 && estatus == false ) {
+      window.alert("Debe iniciar sesión");
+      this.modalCtrl.dismiss();
+      this.route.navigate(['login']);
+    }
   }
 
   actualizar(){
@@ -36,9 +52,14 @@ export class ModalCarritoPage implements OnInit {
   }
 
   eliminar() {
-    this.cartService.emptyCart();
-    this.actualizar();
-    
+    let number = this.cartService.getNumberItems();
+    if(number > 0) {
+      this.cartService.emptyCart();
+      this.actualizar();
+    }
+    else {
+      window.alert("El carrito esta vacio");
+    }
   }
 
   deleteProduct(id: any) {

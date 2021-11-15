@@ -10,6 +10,9 @@ import { UserService } from '../services/user.service';
 })
 export class LoginPage implements OnInit {
   show: boolean = true;
+  privacidad = false;
+  postalApprove = false;
+  phoneApprove = false;
   constructor(private route:Router, private authSvc: AuthService,  private userService: UserService) { }
 
   ngOnInit() {
@@ -23,6 +26,65 @@ export class LoginPage implements OnInit {
     this.route.navigate(['recuperacion']);
   }
 
+  isChecked(event) {
+    if ( event.detail.checked ) {
+      this.privacidad = true;
+   }
+  }
+  confirmaciones(email, password, password_conf, email_conf, phone, postal, name, first_lastname, second_lastname) {
+    let requeridas;
+    if(email && password && password_conf && email_conf && phone && postal && name && first_lastname && second_lastname) {
+      requeridas = true;
+    }
+    else {
+      window.alert('Falta uno o más datos de llenar');
+    }
+    
+    if(requeridas){
+      var phonecorrect = isNaN(phone);
+      var postalcorrect = isNaN(postal); 
+      if (phonecorrect == true) {
+        window.alert('El telefono debe contener solo numeros')
+      }
+      
+      if ( phonecorrect == false) {
+        if (phone.length != 10) {
+          window.alert('El telefono debe ser a diez digitos')
+        }
+        else {
+          this.phoneApprove = true;
+        }
+      }
+
+      if (postalcorrect == true) {
+        window.alert('El codigo postal debe contener solo numeros')
+      }
+
+      if (postalcorrect == false) {
+        if (postal.length != 5) {
+          window.alert('El codigo postal debe contener 5 digitos')
+        }
+        else {
+          this.postalApprove = true;
+        }
+      }
+
+      if (this.privacidad == false) {
+        window.alert('Por favor acepte los terminos y condiciones');
+      }
+      if(password === password_conf && email === email_conf && this.privacidad == true && this.postalApprove == true && this.phoneApprove == true) {
+        this.onRegister(email, password);
+      }
+      if(password !== password_conf) {
+        window.alert('Las contraseñas no son iguales');
+      }
+      if(email !== email_conf) {
+        window.alert('Las direcciones de correo no son iguales');
+      }
+    }
+
+  }
+
   async onRegister(email, password) {
     try {
       const user = await this.authSvc.register(email, password);
@@ -30,6 +92,9 @@ export class LoginPage implements OnInit {
         const isVerified = this.authSvc.isEmailVerified(user);
         this.redirectUser(isVerified);
         
+      }
+      else {
+        window.alert('Hay un error en el formato de sus datos')
       }
     } catch (error) {
       console.log('Error', error);

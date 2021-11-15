@@ -334,6 +334,10 @@ export class CartService {
   subtotal: number = 0;
   constructor() { }
 
+  getNumberItems() {
+    return this.items.length
+  }
+  
   addToCart(id: any) {
     this.items.push(this.hardcode[id-1]);
     this.subtotal = this.subtotal + parseFloat(this.hardcode[id-1].price);

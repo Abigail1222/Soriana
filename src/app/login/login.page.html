@@ -60,7 +60,7 @@
         <ion-col>
           <ion-item class="input2">
             <ion-label position="floating">Confirmar contraseña *</ion-label>
-            <ion-input required="true" name="password_conf"  [(ngModel)]="password_conf"></ion-input>
+            <ion-input  type="password" required="true" name="password_conf"  [(ngModel)]="password_conf"></ion-input>
           </ion-item>
         </ion-col>
       </ion-row>
@@ -100,12 +100,12 @@
           </ion-item>
         </ion-col>
         <ion-col>
-          <ion-checkbox class="label-check-terminos" color="pasto"></ion-checkbox>
+          <ion-checkbox (ionChange)="isChecked($event)" class="label-check-terminos" color="pasto"></ion-checkbox>
           <ion-label class="label-terminos">Acepto los términos y condiciones</ion-label>
         </ion-col>
       </ion-row>
       <ion-row *ngIf="!show">
-        <ion-button (click)="onRegister(email, password)" class="create" color="pasto">
+        <ion-button (click)="confirmaciones(email, password, password_conf, email_conf, phone, postal, name, first_lastname, second_lastname)" class="create" color="pasto">
           Crear cuenta
         </ion-button>
       </ion-row>
