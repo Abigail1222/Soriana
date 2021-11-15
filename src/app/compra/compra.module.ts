@@ -10,13 +10,15 @@ import { CompraPage } from './compra.page';
 import { Toolbar2Component } from '../toolbar2/toolbar2.component';
 import { FooterComponent } from '../footer/footer.component';
 import { CardProductoComponent } from '../card-producto/card-producto.component';
+import { AppModule } from '../app.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    CompraPageRoutingModule
+    CompraPageRoutingModule,
+    AppModule
   ],
   declarations: [CompraPage, Toolbar2Component, FooterComponent, CardProductoComponent],
   exports: [Toolbar2Component, FooterComponent, CardProductoComponent]
