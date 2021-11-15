@@ -13,6 +13,10 @@ export class MetodoPage implements OnInit {
   ngOnInit() {
   }
 
+  redirect() {
+    this.route.navigate(['home']);
+  }
+  
   promocion(tarjeta,nombre,fecha,cvv,direccion) {
     if(tarjeta && nombre && fecha && cvv && direccion){
       this.route.navigate(['promocion']);

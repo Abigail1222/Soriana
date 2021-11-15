@@ -42,4 +42,9 @@ export class ResumenPage implements OnInit {
     this.route.navigate(['proceso']);
   }
 
+  redirect() {
+    this.route.navigate(['home']);
+  }
+
+
 }

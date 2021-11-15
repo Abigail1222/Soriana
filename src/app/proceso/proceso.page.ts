@@ -11,6 +11,17 @@ export class ProcesoPage implements OnInit {
   flechaDer = "../assets/flecha_derecha.png";
   dia: string;
   hora: string = undefined;
+  direccion: string;
+  calle: string;
+  numero: string;
+  cp: string;
+  numero_int: string;
+  estado: string;
+  referencias: string;
+  municipio: string;
+  telefono: string;
+  colonia: string;
+
   constructor(private route:Router, private carritoSvc: CartService) { }
 
   ngOnInit() {

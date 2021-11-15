@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { StringLike } from '@firebase/util';
 import { AuthService } from './../services/auth.service';
 
 @Component({
@@ -8,6 +9,8 @@ import { AuthService } from './../services/auth.service';
   styleUrls: ['./recuperacion.page.scss'],
 })
 export class RecuperacionPage implements OnInit {
+  email: string;
+  
 
   constructor(private authSvc: AuthService, private router: Router) { }
 
