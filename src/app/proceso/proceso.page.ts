@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { CartService } from '../services/cart.service';
 
 @Component({
   selector: 'app-proceso',
@@ -10,7 +11,7 @@ export class ProcesoPage implements OnInit {
   flechaDer = "../assets/flecha_derecha.png";
   dia: string;
   hora: string = undefined;
-  constructor(private route:Router) { }
+  constructor(private route:Router, private carritoSvc: CartService) { }
 
   ngOnInit() {
   }
@@ -40,18 +41,14 @@ export class ProcesoPage implements OnInit {
       if(isNaN(cp)==true || cp.length !== 5){
         alert('Por favor ingrese correctamente el codigo postal a 5 digitos');
       }
-
-      if(isNaN(cp)==false && cp.length == 5 && isNaN(telefono)==false && telefono.length == 10 && isNaN(numero_int)==false && isNaN(numero)==false) {
-        this.route.navigate(['metodo']);
-      }
       
+    }
+    if(isNaN(cp)==false && cp.length == 5 && isNaN(telefono)==false && telefono.length == 10 && isNaN(numero)==false) {
+      this.carritoSvc.setDatos(this.dia, this.hora, direccion, numero);
+      this.route.navigate(['metodo']);
     }
     else {
       window.alert('Por favor llene todos los campos');
     }
-    
-    
-    
   }
-
 }

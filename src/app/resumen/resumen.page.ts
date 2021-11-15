@@ -13,6 +13,10 @@ export class ResumenPage implements OnInit {
   subtotal: number;
   total: number;
   envio: number;
+  direccion2: string;
+  dia: string;
+  hora: string;
+  telefono: string;
   constructor(private route:Router, private carritoSvc: CartService) { }
 
   ngOnInit() {
@@ -20,6 +24,10 @@ export class ResumenPage implements OnInit {
     this.subtotal = this.carritoSvc.getSubtotal();
     this.total = this.carritoSvc.getTotal();
     this.envio = this.carritoSvc.getEnvio();
+    this.direccion2 = this.carritoSvc.getDireccion();
+    this.dia = this.carritoSvc.getDia();
+    this.hora = this.carritoSvc.getHora();
+    this.telefono = this.carritoSvc.getNumero();
   }
 
   confirmacion() {
@@ -33,6 +41,5 @@ export class ResumenPage implements OnInit {
   direccion() {
     this.route.navigate(['proceso']);
   }
-
 
 }

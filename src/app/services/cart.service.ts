@@ -334,6 +334,11 @@ export class CartService {
   subtotal: number = 0;
   total: number = 0;
   envio: number = 49;
+  dia: string;
+  hora: string;
+  direccion: string;
+  numero: string;
+
   constructor() { }
 
   getNumberItems() {
@@ -385,5 +390,27 @@ export class CartService {
     return this.items;
   }
 
+  setDatos(dia, hora, direccion, numero) {
+    this.dia = dia;
+    this.hora = hora;
+    this.direccion = direccion;
+    this.numero = numero;
+  }
+
+  getDia() {
+    return this.dia;
+  }
+
+  getHora(){
+    return this.hora;
+  }
+
+  getDireccion(){
+    return this.direccion;
+  }
+
+  getNumero(){
+    return this.numero;
+  }
 
 }
