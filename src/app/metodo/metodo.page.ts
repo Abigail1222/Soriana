@@ -8,15 +8,19 @@ import { Router } from '@angular/router';
 })
 export class MetodoPage implements OnInit {
   flechaDer = "../assets/flecha_derecha.png";
+  tarjeta: string;
+  nombre: string;
+  fecha: string;
+  cvv: string;
+  direccion: string;
   constructor(private route:Router) { }
-
   ngOnInit() {
   }
 
   redirect() {
     this.route.navigate(['home']);
   }
-  
+
   promocion(tarjeta,nombre,fecha,cvv,direccion) {
     if(tarjeta && nombre && fecha && cvv && direccion){
       this.route.navigate(['promocion']);
