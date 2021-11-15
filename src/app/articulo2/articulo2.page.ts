@@ -19,7 +19,7 @@ export class Articulo2Page implements OnInit {
   @Input() size: string;
 
   constructor(private modalCtrl: ModalController,  private cartService: CartService) { }
-
+  id: any;
   ngOnInit() {
   }
 
