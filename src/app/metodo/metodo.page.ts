@@ -13,7 +13,13 @@ export class MetodoPage implements OnInit {
   ngOnInit() {
   }
 
-  promocion() {
-    this.route.navigate(['promocion']);
+  promocion(tarjeta,nombre,fecha,cvv,direccion) {
+    if(tarjeta && nombre && fecha && cvv && direccion){
+      this.route.navigate(['promocion']);
+    }
+    else {
+      alert('Por favor llene todos los campos');
+    }
+    
   }
 }

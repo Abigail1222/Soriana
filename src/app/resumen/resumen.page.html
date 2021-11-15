@@ -77,7 +77,7 @@
              </ion-card>
            </ion-col>
            <ion-col>
-             <ion-button class="vaciar">Cambiar método</ion-button>
+             <ion-button class="vaciar" (click)="metodo()">Cambiar método</ion-button>
            </ion-col>
          </ion-row>
          <ion-row>
@@ -96,7 +96,7 @@
              </ion-card>
            </ion-col>
            <ion-col>
-             <ion-button class="vaciar">Cambiar dirección</ion-button>
+             <ion-button class="vaciar" (click)="direccion()">Cambiar dirección</ion-button>
            </ion-col>
          </ion-row>
          <ion-row>
@@ -115,7 +115,7 @@
              </ion-card>
            </ion-col>
            <ion-col>
-             <ion-button class="vaciar">Cambiar horario</ion-button>
+             <ion-button class="vaciar" (click)="direccion()">Cambiar horario</ion-button>
            </ion-col>
          </ion-row>
         </ion-col>
@@ -128,7 +128,7 @@
                   <h6>Número de artículos:</h6>
                 </ion-col>
                 <ion-col>
-                  <h6>1</h6>
+                  <h6>{{numeroArticulos}}</h6>
                 </ion-col>
               </ion-row>
               <ion-row class="row-resumen">
@@ -144,7 +144,7 @@
                  <h6><b>Subtotal: </b></h6>
                </ion-col>
                <ion-col >
-                 <h6>$199</h6>
+                 <h6>${{subtotal}}</h6>
                </ion-col>
              </ion-row>
              <ion-row class="row-subtotal">
@@ -152,7 +152,7 @@
                  <h6><b>Envío: </b></h6>
                </ion-col>
                <ion-col >
-                 <h6>$0</h6>
+                 <h6>${{envio}}</h6>
                </ion-col>
              </ion-row>
              <ion-row class="row-subtotal">
@@ -160,7 +160,7 @@
                  <h6><b>Total: </b></h6>
                </ion-col>
                <ion-col >
-                 <h6>$199</h6>
+                 <h6>${{total}}</h6>
                </ion-col>
              </ion-row>
             </ion-grid>

@@ -91,25 +91,19 @@
                 </ion-item>
               </ion-col>
               <ion-col>
-                <ion-button (click)="descuento=!descuento" style="margin-left: 290px;" color="pasto">
+                <ion-button (click)="envioGratis()" style="margin-left: 290px;" color="pasto">
                   Aplicar
                 </ion-button>
               </ion-col>
             </ion-row>
             <ion-row class="subtitles-row">
-              <h6>Subtotal: $199</h6>
+              <h6>Subtotal: ${{subtotal}}</h6>
             </ion-row>
-            <ion-row *ngIf="descuento" class="subtitles-row">
-              <h6>Envío: $49 </h6><h6 *ngIf="!descuento">Envío: Gratis </h6>
+            <ion-row class="subtitles-row">
+              <h6>Envío: ${{envio}} </h6>
             </ion-row>
-            <ion-row *ngIf="!descuento" class="subtitles-row">
-              <h6>Envío: Gratis </h6>
-            </ion-row>
-            <ion-row *ngIf="descuento" class="subtitles-row">
-              <h6>Total: $248</h6><h6 *ngIf="!descuento">Total: $199 </h6>
-            </ion-row>
-            <ion-row *ngIf="!descuento" class="subtitles-row">
-              <h6>Total: $199 </h6>
+            <ion-row  class="subtitles-row">
+              <h6>Total: ${{total}} </h6>
             </ion-row>
           </ion-card>
         </ion-col>

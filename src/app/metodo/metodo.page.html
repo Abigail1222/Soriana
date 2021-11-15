@@ -89,31 +89,31 @@
       <ion-row class="input-tarjeta">
         <ion-item class="input2">
           <ion-label position="floating">Número de la tarjeta *</ion-label>
-          <ion-input required="true"></ion-input>
+          <ion-input required="true" [(ngModel)]="tarjeta"></ion-input>
         </ion-item>
       </ion-row>
       <ion-row class="input-tarjeta">
         <ion-item class="input2">
           <ion-label position="floating">Nombre la tarjeta *</ion-label>
-          <ion-input required="true"></ion-input>
+          <ion-input required="true" [(ngModel)]="nombre"></ion-input>
         </ion-item>
       </ion-row>
       <ion-row class="input-tarjeta">
         <ion-item class="input2">
           <ion-label position="floating">Mes y año de vencimiento *</ion-label>
-          <ion-input required="true"></ion-input>
+          <ion-input required="true" [(ngModel)]="fecha"></ion-input>
         </ion-item>
       </ion-row>
       <ion-row class="input-tarjeta">
         <ion-item class="input2">
           <ion-label position="floating">CVV *</ion-label>
-          <ion-input required="true"></ion-input>
+          <ion-input required="true" [(ngModel)]="cvv"></ion-input>
         </ion-item>
       </ion-row>
       <ion-row class="input-tarjeta">
         <ion-item class="input2">
           <ion-label position="floating">Dirección de la tarjeta *</ion-label>
-          <ion-input required="true"></ion-input>
+          <ion-input required="true" [(ngModel)]="direccion"></ion-input>
         </ion-item>
       </ion-row>
      <ion-row style="margin-left: 450px">
@@ -122,7 +122,7 @@
         <ion-label class="label-terminos">Guardar tarjeta</ion-label>
       </ion-column>
      </ion-row>
-     <ion-button class="continuar-button"  color="pasto" (click)="promocion()">Continuar</ion-button>
+     <ion-button class="continuar-button"  color="pasto" (click)="promocion(tarjeta,nombre,fecha,cvv,direccion)">Continuar</ion-button>
     </ion-grid>
   </ion-card>
 </div>

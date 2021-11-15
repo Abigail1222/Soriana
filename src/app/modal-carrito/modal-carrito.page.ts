@@ -11,7 +11,7 @@ import { CartService } from '../services/cart.service';
 export class ModalCarritoPage implements OnInit {
   items = this.cartService.getItems();
   subtotal = this.cartService.getSubtotal().toString();
-  total = this.cartService.getSubtotal()+49;
+  total = this.cartService.getTotal();
 
   constructor(private authSvc: AuthService, private cdr: ChangeDetectorRef, private modalCtrl: ModalController, private route:Router, private cartService: CartService) { }
 

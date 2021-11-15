@@ -332,6 +332,8 @@ export class CartService {
 ];
   items: Product[] = [];
   subtotal: number = 0;
+  total: number = 0;
+  envio: number = 49;
   constructor() { }
 
   getNumberItems() {
@@ -363,6 +365,20 @@ export class CartService {
 
   getSubtotal() {
     return this.subtotal;
+  }
+
+  getTotal() {
+    this.total = this.subtotal + this.envio;
+    return this.total;
+  }
+
+  getEnvio(){
+    return this.envio;
+  }
+
+  envioGratis(){
+    this.envio = 0;
+    return this.envio;
   }
 
   getItems() {
