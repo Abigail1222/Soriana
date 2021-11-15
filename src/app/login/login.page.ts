@@ -13,6 +13,17 @@ export class LoginPage implements OnInit {
   privacidad = false;
   postalApprove = false;
   phoneApprove = false;
+  email: string;
+  email2: string;
+  password2: string;
+  name: string;
+  password: string;
+  first_lastname: string;
+  password_conf: string;
+  second_lastname: string;
+  phone: string;
+  postal: string;
+  email_conf: string;
   constructor(private route:Router, private authSvc: AuthService,  private userService: UserService) { }
 
   ngOnInit() {
