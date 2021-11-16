@@ -1,0 +1,42 @@
+<ion-content>
+<ion-grid>
+  <ion-row>
+    <ion-col>
+      <img [src]="image">
+    </ion-col>
+    <ion-col>
+      <ion-row >
+        <ion-col style="margin-top: 40px;">
+          <h1 ><b style="color: darkred;">{{name}}</b></h1>
+        </ion-col>
+        <ion-col>
+          <ion-icon class="cerrar" (click)="cerrar()" name="close-outline"></ion-icon>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <h3><b>Marca: </b>{{description}}</h3>
+      </ion-row>
+      <ion-row>
+        <h3><b>Talla: </b>{{size}}</h3>
+      </ion-row>
+      <ion-row style="width: 50px;">
+        <ion-input style="width: 40px;" type="number" value="1" required="false"></ion-input>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <p><ion-icon class="editar" name="create-outline"></ion-icon><small style="cursor: pointer;"> Agregar a lista</small></p>
+        </ion-col>
+        <ion-col>
+          <h1><b>{{price}}</b></h1>
+        </ion-col>
+      </ion-row>
+      <ion-col>
+        <ion-icon class="fav" name="heart-circle-outline"></ion-icon>
+      </ion-col>
+      <ion-col>
+        <ion-button (click)="addToCart(id)" style="margin-left: 100px;" color="pasto">Agregar</ion-button>
+      </ion-col>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+</ion-content>

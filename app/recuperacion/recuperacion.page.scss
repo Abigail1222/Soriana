@@ -1,0 +1,51 @@
+.ion-color-natural {
+    --ion-color-base: var(--ion-color-natural);
+    --ion-color-base-rgb: var(--ion-color-natural-rgb);
+    --ion-color-contrast: var(--ion-color-natural-contrast);
+    --ion-color-contrast-rgb: var(--ion-color-natural-contrast-rgb);
+    --ion-color-shade: var(--ion-color-natural-shade);
+    --ion-color-tint: var(--ion-color-natural-tint);
+  }
+  .login {
+    margin-left: 270px;
+    margin-top: 50px;
+}
+  .header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+  .login-card {
+    width: 900px;
+    height: 400px;
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+
+.align {
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
+}
+
+.input {
+    margin-top: 10px;
+    margin-left: 250px;
+    margin-bottom: 10px;
+    width: 400px;
+}
+
+.boton {
+    width: 300px;
+    margin-left: 310px;
+    margin-top: 40px;
+    height: 40px;
+}
+
+.ion-color-pasto {
+    --ion-color-base: var(--ion-color-pasto);
+    --ion-color-base-rgb: var(--ion-color-pasto-rgb);
+    --ion-color-contrast: var(--ion-color-pasto-contrast);
+    --ion-color-contrast-rgb: var(--ion-color-pasto-contrast-rgb);
+    --ion-color-shade: var(--ion-color-pasto-shade);
+    --ion-color-tint: var(--ion-color-pasto-tint);
+  }

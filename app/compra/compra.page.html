@@ -1,0 +1,43 @@
+<app-toolbar2></app-toolbar2>
+<ion-content fullscreen="true">
+  <div>
+    <ion-grid class="margin-toolbar">
+        <ion-row class=".ion-justify-content-start">
+            <ion-col (click)="redirect()" size="1" >
+                <ion-text class="margins">Inicio</ion-text>
+            </ion-col>
+            <ion-col size="0.5">
+                <img [src]="flechaDer">
+            </ion-col>
+            <ion-col color="rosa" size="2">
+                <b><ion-text color="rosa">Carrito</ion-text></b>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+    <h3><b class="carrito-title">Carrito</b></h3>
+    <ion-grid>
+        <ion-row>
+            <ion-col>
+                <app-card-producto></app-card-producto>
+                <div style="margin-left: 80px; margin-top: 20px;" *ngIf="!show">
+                    <ion-textarea placeholder="Nota" class="text-area"></ion-textarea>
+                </div>
+                <ion-button *ngIf="show" (click)="show=!show" color="porcelana" class="edit">Agregar una nota</ion-button>
+                <ion-button *ngIf="!show" (click)="show=!show" color="natural" class="edit">Guardar nota</ion-button>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+    <ion-grid>
+        <ion-row style="margin-left: 100px; margin-top: 30px;">
+            <ion-col>
+                <ion-button (click)="proceso()" class="continuar" color="pasto" >
+                    Continuar
+                </ion-button>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+  </div>
+</ion-content>
+<app-footer></app-footer>
+  
+

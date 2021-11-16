@@ -1,0 +1,38 @@
+.lower {
+    --background: #C5B358;
+    --min-height: 30px;
+    
+}
+
+.footer {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  
+}
+.but {
+  
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;            /* Footer height */
+  
+}
+.ion-color-natural {
+    --ion-color-base: var(--ion-color-natural);
+    --ion-color-base-rgb: var(--ion-color-natural-rgb);
+    --ion-color-contrast: var(--ion-color-natural-contrast);
+    --ion-color-contrast-rgb: var(--ion-color-natural-contrast-rgb);
+    --ion-color-shade: var(--ion-color-natural-shade);
+    --ion-color-tint: var(--ion-color-natural-tint);
+  }
+  
+.ion-color-pasto {
+    --ion-color-base: var(--ion-color-pasto);
+    --ion-color-base-rgb: var(--ion-color-pasto-rgb);
+    --ion-color-contrast: var(--ion-color-pasto-contrast);
+    --ion-color-contrast-rgb: var(--ion-color-pasto-contrast-rgb);
+    --ion-color-shade: var(--ion-color-pasto-shade);
+    --ion-color-tint: var(--ion-color-pasto-tint);
+  }

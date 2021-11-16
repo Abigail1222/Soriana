@@ -1,0 +1,53 @@
+<ion-header>
+  <ion-toolbar color="rosa">
+    <ion-grid>
+      <ion-row>
+        <ion-col style="margin-block-start: 5px" size="11">
+          <ion-title>Mi carrito</ion-title>
+        </ion-col>
+        <ion-col>
+           <ion-icon (click)="cerrar()" class="close" name="close-outline"></ion-icon>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-card class="producto-card" color="natural" *ngFor="let item of items">
+    <ion-grid>
+        <ion-row>
+            <ion-col size="3.5">
+                <img [src]="item.image">
+            </ion-col>
+            <ion-col>
+                <ion-row>
+                    <ion-col>
+                        <h5><b>{{item.name}}</b></h5>
+                    </ion-col>
+                    <ion-col>
+                        <ion-icon (click)="deleteProduct(item.id)" class="trash" name="trash-outline"></ion-icon>
+                    </ion-col>
+                </ion-row>
+                <ion-row>
+                  <ion-col size="9">
+                      <ion-label>Cantidad</ion-label>
+                      <ion-input style="width: 40px;" type="number" value="1" required="true"></ion-input>
+                  </ion-col>
+                  <ion-col>
+                      <h4><b>${{item.price}}</b></h4>
+                  </ion-col>
+              </ion-row>
+            </ion-col>
+        </ion-row>    
+    </ion-grid>
+  </ion-card>
+<ion-item-divider style="margin-top: 160px;"></ion-item-divider>
+<h6 class="vaciar" (click)="eliminar()">Vaciar carrito</h6>
+<div class="precios">
+  <h5><b>Subtotal: </b>${{subtotal}}</h5>
+<h5><b>Costo de envío: </b>$49</h5>
+<h3><b>Total: ${{total}} </b></h3>
+</div>
+<ion-button (click)="compra()" style="margin-left: 140px;" color="pasto">Continuar con la compra</ion-button>
+
+</ion-content>

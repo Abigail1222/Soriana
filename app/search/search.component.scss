@@ -1,0 +1,32 @@
+.background {
+    width: auto;
+    height: 150px;
+}
+
+.text { 
+  text-align: center;
+}
+
+.search-bar {
+  --icon-color: #4d4f53;
+  width: 500px;
+  margin: auto;
+}
+
+.ion-color-carmin {
+    --ion-color-base: var(--ion-color-carmin);
+    --ion-color-base-rgb: var(--ion-color-carmin-rgb);
+    --ion-color-contrast: var(--ion-color-carmin-contrast);
+    --ion-color-contrast-rgb: var(--ion-color-carmin-contrast-rgb);
+    --ion-color-shade: var(--ion-color-carmin-shade);
+    --ion-color-tint: var(--ion-color-carmin-tint);
+  }
+  
+.ion-color-rojo {
+    --ion-color-base: var(--ion-color-rojo);
+    --ion-color-base-rgb: var(--ion-color-rojo-rgb);
+    --ion-color-contrast: var(--ion-color-rojo-contrast);
+    --ion-color-contrast-rgb: var(--ion-color-rojo-contrast-rgb);
+    --ion-color-shade: var(--ion-color-rojo-shade);
+    --ion-color-tint: var(--ion-color-rojo-tint);
+  }

@@ -1,0 +1,23 @@
+<app-toolbar2></app-toolbar2>
+<ion-content [fullscreen]="true" *ngIf="user$ | async as user">
+  <div class="align">
+ <ion-card class="card">
+  <ion-row>
+    <ion-icon class="icon-grande" name="mail-outline"></ion-icon>
+  </ion-row>
+  <ion-row style="margin-left: 330px;">
+    <h4><b>¡Gracias por registrarse!</b></h4>
+  </ion-row>
+  <ion-row style="margin-left: 210px;">
+    <h6>Se envió un correo de confirmación a  <strong>{{user.email}}</strong>
+    </h6>
+  </ion-row>
+  <ion-row style="margin-left: 210px; margin-bottom: 50px;">
+    <h6>Por favor verifique su bandeja y haga click en el enlace de confirmación
+    </h6>
+  </ion-row>
+  <ion-button style="margin-left: 400px; margin-bottom: 20px;" color="rosa" (click)="onSendEmail()">Reenvíar</ion-button>
+ </ion-card>
+</div>
+<app-footer></app-footer>
+</ion-content>
