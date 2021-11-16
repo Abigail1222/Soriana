@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Item2Component } from './item2.component';
+import { IonicModule } from '@ionic/angular';
 
 
 
@@ -8,7 +9,8 @@ import { Item2Component } from './item2.component';
   declarations: [Item2Component],
   exports: [Item2Component],
   imports: [
-    CommonModule
+    CommonModule,
+    IonicModule
   ]
 })
 export class Item2Module { }
