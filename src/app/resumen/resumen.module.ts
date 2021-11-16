@@ -7,18 +7,20 @@ import { IonicModule } from '@ionic/angular';
 import { ResumenPageRoutingModule } from './resumen-routing.module';
 
 import { ResumenPage } from './resumen.page';
-import { Toolbar2Component } from '../toolbar2/toolbar2.component';
-import { FooterComponent } from '../footer/footer.component';
-import { CardProductoComponent } from '../card-producto/card-producto.component';
+import { Toolbar2Module } from '../toolbar2/toolbar2.module';
+import { FooterModule } from '../footer/footer.module';
+import { CardProductoModule } from '../card-producto/card-producto.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    ResumenPageRoutingModule
+    ResumenPageRoutingModule,
+    Toolbar2Module,
+    FooterModule,
+    CardProductoModule
   ],
-  declarations: [ResumenPage, Toolbar2Component, FooterComponent, CardProductoComponent],
-  exports: [Toolbar2Component, FooterComponent, CardProductoComponent]
+  declarations: [ResumenPage]
 })
 export class ResumenPageModule {}

@@ -7,16 +7,16 @@ import { IonicModule } from '@ionic/angular';
 import { ModalCarritoPageRoutingModule } from './modal-carrito-routing.module';
 
 import { ModalCarritoPage } from './modal-carrito.page';
-import { CardProductoComponent } from '../card-producto/card-producto.component';
+import { CardProductoModule } from '../card-producto/card-producto.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    ModalCarritoPageRoutingModule
+    ModalCarritoPageRoutingModule,
+    CardProductoModule
   ],
-  declarations: [ModalCarritoPage, CardProductoComponent],
-  exports: [CardProductoComponent]
+  declarations: [ModalCarritoPage]
 })
 export class ModalCarritoPageModule {}

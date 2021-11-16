@@ -7,17 +7,18 @@ import { IonicModule } from '@ionic/angular';
 import { ProcesoPageRoutingModule } from './proceso-routing.module';
 
 import { ProcesoPage } from './proceso.page';
-import { Toolbar2Component } from '../toolbar2/toolbar2.component';
-import { FooterComponent } from '../footer/footer.component';
+import { Toolbar2Module } from '../toolbar2/toolbar2.module';
+import { FooterModule } from '../footer/footer.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    ProcesoPageRoutingModule
+    ProcesoPageRoutingModule,
+    Toolbar2Module,
+    FooterModule
   ],
-  declarations: [ProcesoPage, Toolbar2Component, FooterComponent],
-  exports: [Toolbar2Component, FooterComponent]
+  declarations: [ProcesoPage]
 })
 export class ProcesoPageModule {}

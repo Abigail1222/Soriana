@@ -10,7 +10,9 @@ import { CompraPage } from './compra.page';
 import { Toolbar2Component } from '../toolbar2/toolbar2.component';
 import { FooterComponent } from '../footer/footer.component';
 import { CardProductoComponent } from '../card-producto/card-producto.component';
-import { AppModule } from '../app.module';
+import { Toolbar2Module } from '../toolbar2/toolbar2.module';
+import { CardProductoModule } from '../card-producto/card-producto.module';
+import { FooterModule } from '../footer/footer.module';
 
 @NgModule({
   imports: [
@@ -18,10 +20,11 @@ import { AppModule } from '../app.module';
     FormsModule,
     IonicModule,
     CompraPageRoutingModule,
-    AppModule
+    Toolbar2Module,
+    CardProductoModule,
+    FooterModule
   ],
-  declarations: [CompraPage, Toolbar2Component, FooterComponent, CardProductoComponent],
-  exports: [Toolbar2Component, FooterComponent, CardProductoComponent]
+  declarations: [CompraPage]
   
 })
 export class CompraPageModule {}

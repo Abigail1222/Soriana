@@ -7,17 +7,18 @@ import { IonicModule } from '@ionic/angular';
 import { VerificacionPageRoutingModule } from './verificacion-routing.module';
 
 import { VerificacionPage } from './verificacion.page';
-import { Toolbar2Component } from '../toolbar2/toolbar2.component';
-import { FooterComponent } from '../footer/footer.component';
+import { Toolbar2Module } from '../toolbar2/toolbar2.module';
+import { FooterModule } from '../footer/footer.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    VerificacionPageRoutingModule
+    VerificacionPageRoutingModule,
+    Toolbar2Module,
+    FooterModule
   ],
-  declarations: [VerificacionPage, Toolbar2Component, FooterComponent],
-  exports: [Toolbar2Component, FooterComponent]
+  declarations: [VerificacionPage]
 })
 export class VerificacionPageModule {}

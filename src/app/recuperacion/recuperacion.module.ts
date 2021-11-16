@@ -7,17 +7,18 @@ import { IonicModule } from '@ionic/angular';
 import { RecuperacionPageRoutingModule } from './recuperacion-routing.module';
 
 import { RecuperacionPage } from './recuperacion.page';
-import { Toolbar2Component } from '../toolbar2/toolbar2.component';
-import { FooterComponent } from '../footer/footer.component';
+import { Toolbar2Module } from '../toolbar2/toolbar2.module';
+import { FooterModule } from '../footer/footer.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    RecuperacionPageRoutingModule
+    RecuperacionPageRoutingModule,
+    Toolbar2Module,
+    FooterModule
   ],
-  declarations: [RecuperacionPage, Toolbar2Component, FooterComponent],
-  exports: [Toolbar2Component, FooterComponent]
+  declarations: [RecuperacionPage]
 })
 export class RecuperacionPageModule {}

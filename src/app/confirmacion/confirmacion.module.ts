@@ -7,17 +7,18 @@ import { IonicModule } from '@ionic/angular';
 import { ConfirmacionPageRoutingModule } from './confirmacion-routing.module';
 
 import { ConfirmacionPage } from './confirmacion.page';
-import { Toolbar2Component } from '../toolbar2/toolbar2.component';
-import { FooterComponent } from '../footer/footer.component';
+import { Toolbar2Module } from '../toolbar2/toolbar2.module';
+import { FooterModule } from '../footer/footer.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    ConfirmacionPageRoutingModule
+    ConfirmacionPageRoutingModule,
+    Toolbar2Module,
+    FooterModule
   ],
-  declarations: [ConfirmacionPage, Toolbar2Component, FooterComponent],
-  exports: [Toolbar2Component, FooterComponent]
+  declarations: [ConfirmacionPage]
 })
 export class ConfirmacionPageModule {}

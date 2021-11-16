@@ -7,18 +7,20 @@ import { IonicModule } from '@ionic/angular';
 import { PromocionPageRoutingModule } from './promocion-routing.module';
 
 import { PromocionPage } from './promocion.page';
-import { Toolbar2Component } from '../toolbar2/toolbar2.component';
-import { FooterComponent } from '../footer/footer.component';
-import { CardProductoComponent } from '../card-producto/card-producto.component';
+import { FooterModule } from '../footer/footer.module';
+import { CardProductoModule } from '../card-producto/card-producto.module';
+import { Toolbar2Module } from '../toolbar2/toolbar2.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    PromocionPageRoutingModule
+    PromocionPageRoutingModule,
+    FooterModule,
+    CardProductoModule,
+    Toolbar2Module
   ],
-  declarations: [PromocionPage, Toolbar2Component, FooterComponent, CardProductoComponent],
-  exports: [Toolbar2Component, FooterComponent, CardProductoComponent]
+  declarations: [PromocionPage]
 })
 export class PromocionPageModule {}

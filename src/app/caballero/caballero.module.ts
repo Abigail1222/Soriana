@@ -7,19 +7,23 @@ import { IonicModule } from '@ionic/angular';
 import { CaballeroPageRoutingModule } from './caballero-routing.module';
 
 import { CaballeroPage } from './caballero.page';
-import { Toolbar2Component } from '../toolbar2/toolbar2.component';
-import { FooterComponent } from '../footer/footer.component';
-import { ProductComponent } from '../product/product.component';
-import { FilterComponent } from '../filter/filter.component';
+
+import { Toolbar2Module } from '../toolbar2/toolbar2.module';
+import { FooterModule } from '../footer/footer.module';
+import { FilterModule } from '../filter/filter.module';
+import { ProductModule } from '../product/product.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    CaballeroPageRoutingModule
+    CaballeroPageRoutingModule,
+    Toolbar2Module,
+    FooterModule,
+    ProductModule,
+    FilterModule
   ],
-  declarations: [CaballeroPage, Toolbar2Component, FooterComponent, ProductComponent, FilterComponent],
-  exports: [CaballeroPage, Toolbar2Component, FooterComponent, ProductComponent, FilterComponent]
+  declarations: [CaballeroPage]
 })
 export class CaballeroPageModule {}

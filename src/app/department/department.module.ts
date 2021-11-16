@@ -12,15 +12,23 @@ import { FooterComponent } from '../footer/footer.component';
 import { Item2Component } from '../item2/item2.component';
 import { ToolbarComponent } from '../toolbar/toolbar.component';
 import { MenuComponent } from '../menu/menu.component';
+import { FooterModule } from '../footer/footer.module';
+import { Item2Module } from '../item2/item2.module';
+import { Toolbar2Module } from '../toolbar2/toolbar2.module';
+import { MenuModule } from '../menu/menu.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    DepartmentPageRoutingModule
+    DepartmentPageRoutingModule,
+    FooterModule,
+    Item2Module,
+    Toolbar2Module,
+    MenuModule
   ],
-  exports: [DepartmentPage, Toolbar2Component, FooterComponent, Item2Component,ToolbarComponent, MenuComponent],
-  declarations: [DepartmentPage, Toolbar2Component, FooterComponent, Item2Component, ToolbarComponent, MenuComponent]
+  
+  declarations: [DepartmentPage]
 })
 export class DepartmentPageModule {}

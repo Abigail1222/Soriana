@@ -8,12 +8,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { environment } from 'src/environments/environment';
 import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFireAuthModule } from '@angular/fire/compat/auth';
-import { CardProductoComponent } from './card-producto/card-producto.component';
 
 
 @NgModule({
-  declarations: [AppComponent, CardProductoComponent],
-  exports: [CardProductoComponent],
+  declarations: [AppComponent],
   entryComponents: [],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, AngularFireModule.initializeApp(environment.firebaseConfig), AngularFireAuthModule  ],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],

@@ -7,19 +7,22 @@ import { IonicModule } from '@ionic/angular';
 import { JoyeriaPageRoutingModule } from './joyeria-routing.module';
 
 import { JoyeriaPage } from './joyeria.page';
-import { Toolbar2Component} from '../toolbar2/toolbar2.component';
-import { FooterComponent } from '../footer/footer.component';
-import { FilterComponent } from '../filter/filter.component';
-import { ProductComponent } from '../product/product.component';
+import { Toolbar2Module } from '../toolbar2/toolbar2.module';
+import { FooterModule } from '../footer/footer.module';
+import { ProductModule } from '../product/product.module';
+import { FilterModule } from '../filter/filter.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    JoyeriaPageRoutingModule
+    JoyeriaPageRoutingModule,
+    Toolbar2Module,
+    FooterModule,
+    ProductModule,
+    FilterModule
   ],
-  declarations: [JoyeriaPage, Toolbar2Component, FooterComponent, ProductComponent, FilterComponent],
-  exports: [JoyeriaPage, Toolbar2Component, FooterComponent, ProductComponent, FilterComponent]
+  declarations: [JoyeriaPage]
 })
 export class JoyeriaPageModule {}

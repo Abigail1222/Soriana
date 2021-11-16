@@ -7,17 +7,18 @@ import { IonicModule } from '@ionic/angular';
 import { MetodoPageRoutingModule } from './metodo-routing.module';
 
 import { MetodoPage } from './metodo.page';
-import { Toolbar2Component } from '../toolbar2/toolbar2.component';
-import { FooterComponent } from '../footer/footer.component';
+import { Toolbar2Module } from '../toolbar2/toolbar2.module';
+import { FooterModule } from '../footer/footer.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    MetodoPageRoutingModule
+    MetodoPageRoutingModule,
+    Toolbar2Module,
+    FooterModule
   ],
-  declarations: [MetodoPage,Toolbar2Component, FooterComponent],
-  exports: [Toolbar2Component, FooterComponent]
+  declarations: [MetodoPage]
 })
 export class MetodoPageModule {}

@@ -9,6 +9,10 @@ import { ToolbarComponent } from '../toolbar/toolbar.component';
 import { FooterComponent } from '../footer/footer.component';
 import { ItemComponent } from '../item/item.component';
 import { SearchComponent } from '../search/search.component';
+import { ToolbarModule } from '../toolbar/toolbar.module';
+import { FooterModule } from '../footer/footer.module';
+import { ItemModule } from '../item/item.module';
+import { SearchModule } from '../search/search.module';
 
 
 @NgModule({
@@ -16,9 +20,13 @@ import { SearchComponent } from '../search/search.component';
     CommonModule,
     FormsModule,
     IonicModule,
-    HomePageRoutingModule
+    HomePageRoutingModule,
+    ToolbarModule,
+    FooterModule,
+    ItemModule,
+    SearchModule
   ],
-  exports: [ToolbarComponent, FooterComponent, ItemComponent, SearchComponent],
-  declarations: [HomePage, ToolbarComponent, FooterComponent, ItemComponent, SearchComponent]
+  
+  declarations: [HomePage]
 })
 export class HomePageModule {}

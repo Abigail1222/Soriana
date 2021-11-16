@@ -7,17 +7,18 @@ import { IonicModule } from '@ionic/angular';
 import { CuentaPageRoutingModule } from './cuenta-routing.module';
 
 import { CuentaPage } from './cuenta.page';
-import { Toolbar2Component } from '../toolbar2/toolbar2.component';
-import { FooterComponent } from '../footer/footer.component';
+import { Toolbar2Module } from '../toolbar2/toolbar2.module';
+import { FooterModule } from '../footer/footer.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    CuentaPageRoutingModule
+    CuentaPageRoutingModule,
+    Toolbar2Module,
+    FooterModule
   ],
-  declarations: [CuentaPage, Toolbar2Component, FooterComponent],
-  exports: [Toolbar2Component, FooterComponent]
+  declarations: [CuentaPage]
 })
 export class CuentaPageModule {}
