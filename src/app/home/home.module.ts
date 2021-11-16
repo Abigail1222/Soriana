@@ -5,10 +5,6 @@ import { FormsModule } from '@angular/forms';
 import { HomePage } from './home.page';
 
 import { HomePageRoutingModule } from './home-routing.module';
-import { ToolbarComponent } from '../toolbar/toolbar.component';
-import { FooterComponent } from '../footer/footer.component';
-import { ItemComponent } from '../item/item.component';
-import { SearchComponent } from '../search/search.component';
 import { ToolbarModule } from '../toolbar/toolbar.module';
 import { FooterModule } from '../footer/footer.module';
 import { ItemModule } from '../item/item.module';
@@ -24,7 +20,7 @@ import { SearchModule } from '../search/search.module';
     ToolbarModule,
     FooterModule,
     ItemModule,
-    SearchModule
+    SearchModule,
   ],
   
   declarations: [HomePage]

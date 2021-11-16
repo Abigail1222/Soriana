@@ -1,4 +1,9 @@
 <ion-content class="background" color="carmin">
   <ion-text><h1 class="text">¿Qué buscas?</h1></ion-text>
-  <ion-searchbar class="search-bar" placeholder="Buscar"></ion-searchbar>
+  <ion-searchbar (ionInput)="update($event)" (ionBlur)="update2($event)"class="search-bar" placeholder="Buscar" [(ngModel)]="searchTerm"></ion-searchbar>
 </ion-content>
+<ion-list *ngIf="bandera==true">
+  <ion-item *ngFor="let carr of carrito | filter: searchTerm">
+    <ion-label style="cursor: pointer;" (click)="redirect(carr.url)">{{carr.name}}</ion-label>
+  </ion-item>
+</ion-list>
