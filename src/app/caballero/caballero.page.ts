@@ -16,7 +16,7 @@ export class CaballeroPage implements OnInit {
     {
       id: 5,
       name: "Camisa",
-      image: '../assets/camisa.jpg',
+      image: 'assets/camisa.jpg',
       url: '',
       description: 'Marca Bazzar',
       size: '32',
@@ -25,7 +25,7 @@ export class CaballeroPage implements OnInit {
     {
       id: 6,
       name: "Playera",
-      image: '../assets/playera.jpg',
+      image: 'assets/playera.jpg',
       url: '',
       description: 'Marvel',
       size: 'L',
@@ -34,7 +34,7 @@ export class CaballeroPage implements OnInit {
     {
       id: 7,
       name: "Saco",
-      image: '../assets/saco.jpg',
+      image: 'assets/saco.jpg',
       url: '',
       description: 'T&H',
       size: 'M',
@@ -43,14 +43,14 @@ export class CaballeroPage implements OnInit {
     {
       id: 8,
       name: "Cinturón",
-      image: '../assets/cinturon.jpg',
+      image: 'assets/cinturon.jpg',
       url: '',
       description: 'Buffway',
       size: '38',
       price: '$199'
     }
   ];
-  flechaDer = "../assets/flecha_derecha.png";
+  flechaDer = "assets/flecha_derecha.png";
   constructor(private route: Router, private modalCtrl: ModalController, private cartService: CartService) { 
     this.productos();
   }

@@ -17,7 +17,7 @@ export class ProductComponent implements OnInit {
     {
       id: 1,
       name: "Blusa rosa",
-      image: '../assets/blusa_rosa.jpg',
+      image: 'assets/blusa_rosa.jpg',
       url: '',
       description: 'Cherokee',
       size: '9',
@@ -26,7 +26,7 @@ export class ProductComponent implements OnInit {
     {
       id: 2,
       name: "Short",
-      image: '../assets/short.jpg',
+      image: 'assets/short.jpg',
       url: '',
       description: 'LEVIS',
       size: 'M',
@@ -35,7 +35,7 @@ export class ProductComponent implements OnInit {
     {
       id: 3,
       name: "Zapatillas",
-      image: '../assets/zapatillas.png',
+      image: 'assets/zapatillas.png',
       url: '',
       description: 'Flexi',
       size: '24',
@@ -44,7 +44,7 @@ export class ProductComponent implements OnInit {
     {
       id: 4,
       name: "Lentes",
-      image: '../assets/lentes.png',
+      image: 'assets/lentes.png',
       url: '',
       description: 'Panama',
       size: 'Unitalla',

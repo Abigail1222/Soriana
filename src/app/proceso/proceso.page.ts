@@ -8,7 +8,7 @@ import { CartService } from '../services/cart.service';
   styleUrls: ['./proceso.page.scss'],
 })
 export class ProcesoPage implements OnInit {
-  flechaDer = "../assets/flecha_derecha.png";
+  flechaDer = "assets/flecha_derecha.png";
   dia: string;
   hora: string = undefined;
   direccion: string;

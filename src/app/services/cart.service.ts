@@ -8,7 +8,7 @@ export class CartService {
   hardcode = [{
     id: 1,
     name: "Blusa rosa",
-    image: '../assets/blusa_rosa.jpg',
+    image: 'assets/blusa_rosa.jpg',
     url: '',
     description: 'Cherokee',
     size: '9',
@@ -17,7 +17,7 @@ export class CartService {
   {
     id: 2,
     name: "Short",
-    image: '../assets/short.jpg',
+    image: 'assets/short.jpg',
     url: '',
     description: 'LEVIS',
     size: 'M',
@@ -26,7 +26,7 @@ export class CartService {
   {
     id: 3,
     name: "Zapatillas",
-    image: '../assets/zapatillas.png',
+    image: 'assets/zapatillas.png',
     url: '',
     description: 'Flexi',
     size: '24',
@@ -35,7 +35,7 @@ export class CartService {
   {
     id: 4,
     name: "Lentes",
-    image: '../assets/lentes.png',
+    image: 'assets/lentes.png',
     url: '',
     description: 'Panama',
     size: 'Unitalla',
@@ -44,7 +44,7 @@ export class CartService {
   {
     id: 5,
     name: "Camisa cuadros",
-    image: '../assets/camisa.jpg',
+    image: 'assets/camisa.jpg',
     url: '',
     description: 'Marca Bazzar',
     size: '32',
@@ -53,7 +53,7 @@ export class CartService {
   {
     id: 6,
     name: "Playera",
-    image: '../assets/playera.jpg',
+    image: 'assets/playera.jpg',
     url: '',
     description: 'Marvel',
     size: 'L',
@@ -62,7 +62,7 @@ export class CartService {
   {
     id: 7,
     name: "Saco",
-    image: '../assets/saco.jpg',
+    image: 'assets/saco.jpg',
     url: '',
     description: 'T&H',
     size: 'M',
@@ -71,7 +71,7 @@ export class CartService {
   {
     id: 8,
     name: "Cinturón",
-    image: '../assets/cinturon.jpg',
+    image: 'assets/cinturon.jpg',
     url: '',
     description: 'Buffway',
     size: '38',
@@ -80,7 +80,7 @@ export class CartService {
   {
     id: 9,
     name: "Calcetas",
-    image: '../assets/calceta.jpg',
+    image: 'assets/calceta.jpg',
     url: '',
     description: 'Grafito',
     size: 'Recien nacido',
@@ -89,7 +89,7 @@ export class CartService {
   {
     id: 10,
     name: "Mameluco",
-    image: '../assets/mameluco.jpg',
+    image: 'assets/mameluco.jpg',
     url: '',
     description: 'Little me',
     size: '3 meses',
@@ -98,7 +98,7 @@ export class CartService {
   {
     id: 11,
     name: "Pañalero",
-    image: '../assets/panalero.jpg',
+    image: 'assets/panalero.jpg',
     url: '',
     description: 'Bam-Bu',
     size: '6 meses',
@@ -107,7 +107,7 @@ export class CartService {
   {
     id: 12,
     name: "Moño",
-    image: '../assets/mono.jpg',
+    image: 'assets/mono.jpg',
     url: '',
     description: 'KidsLuxury',
     size: 'Unitalla',
@@ -116,7 +116,7 @@ export class CartService {
   {
     id: 13,
     name: "Aretes Esfera",
-    image: '../assets/arete.jpg',
+    image: 'assets/arete.jpg',
     url: '',
     description: 'Fraiche',
     size: 'Unitalla',
@@ -125,7 +125,7 @@ export class CartService {
   {
     id: 14,
     name: "Collar perlas",
-    image: '../assets/collar.jpg',
+    image: 'assets/collar.jpg',
     url: '',
     description: 'Eva',
     size: 'Unitalla',
@@ -134,7 +134,7 @@ export class CartService {
   {
     id: 15,
     name: "Reloj",
-    image: '../assets/reloj.jpg',
+    image: 'assets/reloj.jpg',
     url: '',
     description: 'CURREN',
     size: 'Unitalla',
@@ -143,7 +143,7 @@ export class CartService {
   {
     id: 16,
     name: "Anillo",
-    image: '../assets/anillo.jpg',
+    image: 'assets/anillo.jpg',
     url: '',
     description: 'Her',
     size: 'CH',
@@ -152,7 +152,7 @@ export class CartService {
   {
     id: 17,
     name: "Tenis",
-    image: '../assets/tenis.jpg',
+    image: 'assets/tenis.jpg',
     url: '',
     description: 'Charly',
     size: '9',
@@ -161,7 +161,7 @@ export class CartService {
   {
     id: 18,
     name: "Tacón",
-    image: '../assets/tacon.jpg',
+    image: 'assets/tacon.jpg',
     url: '',
     description: 'Spring',
     size: '26',
@@ -170,7 +170,7 @@ export class CartService {
   {
     id: 19,
     name: "Zapato hombre",
-    image: '../assets/zapato.jpg',
+    image: 'assets/zapato.jpg',
     url: '',
     description: 'Privalia',
     size: '8',
@@ -179,7 +179,7 @@ export class CartService {
   {
     id: 20,
     name: "Chancla playa",
-    image: '../assets/chancla.jpg',
+    image: 'assets/chancla.jpg',
     url: '',
     description: 'Summer',
     size: '7',
@@ -188,7 +188,7 @@ export class CartService {
   {
     id: 21,
     name: "Sudadera",
-    image: '../assets/sudadera.jpg',
+    image: 'assets/sudadera.jpg',
     url: '',
     description: 'Piru',
     size: '14',
@@ -197,7 +197,7 @@ export class CartService {
   {
     id: 22,
     name: "Playera",
-    image: '../assets/thing.jpg',
+    image: 'assets/thing.jpg',
     url: '',
     description: 'Sibuts',
     size: '12',
@@ -206,7 +206,7 @@ export class CartService {
   {
     id: 23,
     name: "Impermeable",
-    image: '../assets/impermeable.png',
+    image: 'assets/impermeable.png',
     url: '',
     description: 'Peques',
     size: '2 a 3 años',
@@ -215,7 +215,7 @@ export class CartService {
   {
     id: 24,
     name: "Vestido",
-    image: '../assets/vestido.jpg',
+    image: 'assets/vestido.jpg',
     url: '',
     description: 'Up',
     size: '3 años',
@@ -224,7 +224,7 @@ export class CartService {
   {
     id: 25,
     name: "Arroz",
-    image: '../assets/arroz.jpg',
+    image: 'assets/arroz.jpg',
     url: '',
     description: 'Verde valle',
     size: '32',
@@ -233,7 +233,7 @@ export class CartService {
   {
     id: 26,
     name: "Frijol",
-    image: '../assets/frijol.jpg',
+    image: 'assets/frijol.jpg',
     url: '',
     description: 'Frijolin',
     size: 'L',
@@ -242,7 +242,7 @@ export class CartService {
   {
     id: 27,
     name: "Elote",
-    image: '../assets/elote.jpg',
+    image: 'assets/elote.jpg',
     url: '',
     description: 'La costeña',
     size: 'M',
@@ -251,7 +251,7 @@ export class CartService {
   {
     id: 28,
     name: "Champiñones",
-    image: '../assets/champi.jpg',
+    image: 'assets/champi.jpg',
     url: '',
     description: 'Herdez',
     size: '38',
@@ -260,7 +260,7 @@ export class CartService {
   {
     id: 29,
     name: "Hisopos",
-    image: '../assets/hisopo.jpg',
+    image: 'assets/hisopo.jpg',
     url: '',
     description: 'Medimart',
     size: '32',
@@ -269,7 +269,7 @@ export class CartService {
   {
     id: 30,
     name: "Alcohol etílico",
-    image: '../assets/alcohol.jpg',
+    image: 'assets/alcohol.jpg',
     url: '',
     description: 'Jaloma',
     size: 'L',
@@ -278,7 +278,7 @@ export class CartService {
   {
     id: 31,
     name: "Agua oxigenada",
-    image: '../assets/oxi.jpg',
+    image: 'assets/oxi.jpg',
     url: '',
     description: 'Alcofarma',
     size: 'M',
@@ -287,7 +287,7 @@ export class CartService {
   {
     id: 32,
     name: "Torundas",
-    image: '../assets/torunda.jpg',
+    image: 'assets/torunda.jpg',
     url: '',
     description: 'Medimart',
     size: '38',
@@ -296,7 +296,7 @@ export class CartService {
   {
     id: 33,
     name: "Tomate",
-    image: '../assets/tomate.jpg',
+    image: 'assets/tomate.jpg',
     url: '',
     description: 'Soriana',
     size: '32',
@@ -305,7 +305,7 @@ export class CartService {
   {
     id: 34,
     name: "Cebolla",
-    image: '../assets/cebolla.jpg',
+    image: 'assets/cebolla.jpg',
     url: '',
     description: 'Soriana',
     size: 'L',
@@ -314,7 +314,7 @@ export class CartService {
   {
     id: 35,
     name: "Manzana roja",
-    image: '../assets/manzana.jpg',
+    image: 'assets/manzana.jpg',
     url: '',
     description: 'Soriana',
     size: 'M',
@@ -323,7 +323,7 @@ export class CartService {
   {
     id: 36,
     name: "Platano Chiapas",
-    image: '../assets/platano.jpg',
+    image: 'assets/platano.jpg',
     url: '',
     description: 'Soriana',
     size: '38',
@@ -412,5 +412,7 @@ export class CartService {
   getNumero(){
     return this.numero;
   }
+
+
 
 }

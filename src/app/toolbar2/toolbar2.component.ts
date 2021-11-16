@@ -9,7 +9,7 @@ import { AuthService } from '../services/auth.service';
   styleUrls: ['./toolbar2.component.scss'],
 })
 export class Toolbar2Component implements OnInit {
-  sorianaLogo = "../assets/soriana-logo.png";
+  sorianaLogo = "assets/soriana-logo.png";
   constructor(private route:Router, private modalCtrl: ModalController, private menuCtrl: MenuController, private authSvc: AuthService) { }
 
   ngOnInit() {}

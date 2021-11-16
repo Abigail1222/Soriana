@@ -7,7 +7,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./metodo.page.scss'],
 })
 export class MetodoPage implements OnInit {
-  flechaDer = "../assets/flecha_derecha.png";
+  flechaDer = "assets/flecha_derecha.png";
   tarjeta: string;
   nombre: string;
   fecha: string;

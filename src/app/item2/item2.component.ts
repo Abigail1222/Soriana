@@ -8,10 +8,10 @@ import { Router } from '@angular/router';
 })
 export class Item2Component implements OnInit {
 
-  despensa = "../assets/despensa.jpg";
-  flechaIzq = "../assets/flecha_izquierda.png";
-  flechaDer = "../assets/flecha_derecha.png";
-  flecha = "../assets/flecha.png";
+  despensa = "assets/despensa.jpg";
+  flechaIzq = "assets/flecha_izquierda.png";
+  flechaDer = "assets/flecha_derecha.png";
+  flecha = "assets/flecha.png";
   fila1: any;
   fila2: any;
 
@@ -26,17 +26,17 @@ export class Item2Component implements OnInit {
     this.fila1 = [
       {
         name: "Bebés",
-        image: '../assets/bebes.jpg',
+        image: 'assets/bebes.jpg',
         url: 'bebe'
       },
       {
         name: "Caballero",
-        image: '../assets/caballero.jpg',
+        image: 'assets/caballero.jpg',
         url: 'caballero'
       },
       {
         name: "Zapatos",
-        image: '../assets/zapatos.jpg',
+        image: 'assets/zapatos.jpg',
         url: 'zapatos'
       }
     ]
@@ -46,17 +46,17 @@ export class Item2Component implements OnInit {
     this.fila2 = [
       {
         name: "Niños",
-        image: '../assets/niños.jpg',
+        image: 'assets/niños.jpg',
         url: 'kids'
       },
       {
         name: "Dama",
-        image: '../assets/dama.jpg',
+        image: 'assets/dama.jpg',
         url: 'lady'
       },
       {
         name: "Joyería",
-        image: '../assets/joyeria.jpg',
+        image: 'assets/joyeria.jpg',
         url: 'joyeria'
       }
     ]

@@ -17,7 +17,7 @@ export class FarmaciaPage implements OnInit {
     {
       id: 29,
       name: "Hisopos",
-      image: '../assets/hisopo.jpg',
+      image: 'assets/hisopo.jpg',
       url: '',
       description: 'Medimart',
       size: '32',
@@ -26,7 +26,7 @@ export class FarmaciaPage implements OnInit {
     {
       id: 30,
       name: "Alcohol etílico",
-      image: '../assets/alcohol.jpg',
+      image: 'assets/alcohol.jpg',
       url: '',
       description: 'Jaloma',
       size: 'L',
@@ -35,7 +35,7 @@ export class FarmaciaPage implements OnInit {
     {
       id: 31,
       name: "Agua oxigenada",
-      image: '../assets/oxi.jpg',
+      image: 'assets/oxi.jpg',
       url: '',
       description: 'Alcofarma',
       size: 'M',
@@ -44,14 +44,14 @@ export class FarmaciaPage implements OnInit {
     {
       id: 32,
       name: "Torundas",
-      image: '../assets/torunda.jpg',
+      image: 'assets/torunda.jpg',
       url: '',
       description: 'Medimart',
       size: '38',
       price: '$42'
     }
   ];
-  flechaDer = "../assets/flecha_derecha.png";
+  flechaDer = "assets/flecha_derecha.png";
   constructor(private route: Router, private modalCtrl: ModalController, private cartService: CartService) { 
     this.productos();
   }

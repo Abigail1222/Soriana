@@ -15,7 +15,7 @@ export class BebePage implements OnInit {
     {
       id: 9,
       name: "Calcetas",
-      image: '../assets/calceta.jpg',
+      image: 'assets/calceta.jpg',
       url: '',
       description: 'Grafito',
       size: 'Recien nacido',
@@ -24,7 +24,7 @@ export class BebePage implements OnInit {
     {
       id: 10,
       name: "Mameluco",
-      image: '../assets/mameluco.jpg',
+      image: 'assets/mameluco.jpg',
       url: '',
       description: 'Little me',
       size: '3 meses',
@@ -33,7 +33,7 @@ export class BebePage implements OnInit {
     {
       id: 11,
       name: "Pañalero",
-      image: '../assets/panalero.jpg',
+      image: 'assets/panalero.jpg',
       url: '',
       description: 'Bam-Bu',
       size: '6 meses',
@@ -42,14 +42,14 @@ export class BebePage implements OnInit {
     {
       id: 12,
       name: "Moño",
-      image: '../assets/mono.jpg',
+      image: 'assets/mono.jpg',
       url: '',
       description: 'KidsLuxury',
       size: 'Unitalla',
       price: '$99'
     }
   ];
-  flechaDer = "../assets/flecha_derecha.png";
+  flechaDer = "assets/flecha_derecha.png";
 
   constructor(private route: Router, private modalCtrl: ModalController, private cartService: CartService) {
     this.productos();

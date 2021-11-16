@@ -16,7 +16,7 @@ export class KidsPage implements OnInit {
     {
       id: 21,
       name: "Sudadera",
-      image: '../assets/sudadera.jpg',
+      image: 'assets/sudadera.jpg',
       url: '',
       description: 'Piru',
       size: '14',
@@ -25,7 +25,7 @@ export class KidsPage implements OnInit {
     {
       id: 22,
       name: "Playera",
-      image: '../assets/thing.jpg',
+      image: 'assets/thing.jpg',
       url: '',
       description: 'Sibuts',
       size: '12',
@@ -34,7 +34,7 @@ export class KidsPage implements OnInit {
     {
       id: 23,
       name: "Impermeable",
-      image: '../assets/impermeable.png',
+      image: 'assets/impermeable.png',
       url: '',
       description: 'Peques',
       size: '2 a 3 años',
@@ -43,14 +43,14 @@ export class KidsPage implements OnInit {
     {
       id: 24,
       name: "Vestido",
-      image: '../assets/vestido.jpg',
+      image: 'assets/vestido.jpg',
       url: '',
       description: 'Up',
       size: '3 años',
       price: '$279'
     }
   ];
-  flechaDer = "../assets/flecha_derecha.png";
+  flechaDer = "assets/flecha_derecha.png";
   constructor(private route: Router, private modalCtrl: ModalController, private cartService: CartService) { 
     this.productos();
   }

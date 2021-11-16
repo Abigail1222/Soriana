@@ -8,9 +8,9 @@ import { Router } from '@angular/router';
 })
 export class ItemComponent implements OnInit {
 
-  despensa = "../assets/despensa.jpg";
-  flechaIzq = "../assets/flecha_izquierda.png";
-  flechaDer = "../assets/flecha_derecha.png";
+  despensa = "assets/despensa.jpg";
+  flechaIzq = "assets/flecha_izquierda.png";
+  flechaDer = "assets/flecha_derecha.png";
   departamentos: any;
   servicios: any;
 
@@ -25,22 +25,22 @@ export class ItemComponent implements OnInit {
     this.departamentos = [
       {
         name: "Despensa",
-        image: '../assets/despensa.jpg',
+        image: 'assets/despensa.jpg',
         url: 'despensa'
       },
       {
         name: "Frutas y Verduras",
-        image: '../assets/frutas.jpg',
+        image: 'assets/frutas.jpg',
         url: 'fruta-verdura'
       },
       {
         name: "Moda y Accesorios",
-        image: '../assets/ropa.jpg',
+        image: 'assets/ropa.jpg',
         url: 'department'
       },
       {
         name: "Farmacia",
-        image: '../assets/farmacia.jpg',
+        image: 'assets/farmacia.jpg',
         url: 'farmacia'
       }
     ]
@@ -50,19 +50,19 @@ export class ItemComponent implements OnInit {
     this.servicios = [
       {
         name: "Facturación Electrónica",
-        image: '../assets/factura.jpg',
+        image: 'assets/factura.jpg',
       },
       {
         name: "Tarjeta Falabella",
-        image: '../assets/falabella.jpg',
+        image: 'assets/falabella.jpg',
       },
       {
         name: "Pago de Servicios",
-        image: '../assets/pago.jpg',
+        image: 'assets/pago.jpg',
       },
       {
         name: "Consultorio Médico",
-        image: '../assets/medico.jpg',
+        image: 'assets/medico.jpg',
       }
     ]
   }

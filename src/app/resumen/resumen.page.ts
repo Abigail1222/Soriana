@@ -8,7 +8,7 @@ import { CartService } from '../services/cart.service';
   styleUrls: ['./resumen.page.scss'],
 })
 export class ResumenPage implements OnInit {
-  flechaDer = "../assets/flecha_derecha.png";
+  flechaDer = "assets/flecha_derecha.png";
   numeroArticulos: number;
   subtotal: number;
   total: number;

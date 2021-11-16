@@ -17,7 +17,7 @@ export class DespensaPage implements OnInit {
     {
       id: 25,
       name: "Arroz",
-      image: '../assets/arroz.jpg',
+      image: 'assets/arroz.jpg',
       url: '',
       description: 'Verde valle',
       size: '32',
@@ -26,7 +26,7 @@ export class DespensaPage implements OnInit {
     {
       id: 26,
       name: "Frijol",
-      image: '../assets/frijol.jpg',
+      image: 'assets/frijol.jpg',
       url: '',
       description: 'Frijolin',
       size: 'L',
@@ -35,7 +35,7 @@ export class DespensaPage implements OnInit {
     {
       id: 27,
       name: "Elote",
-      image: '../assets/elote.jpg',
+      image: 'assets/elote.jpg',
       url: '',
       description: 'La costeña',
       size: 'M',
@@ -44,14 +44,14 @@ export class DespensaPage implements OnInit {
     {
       id: 28,
       name: "Champiñones",
-      image: '../assets/champi.jpg',
+      image: 'assets/champi.jpg',
       url: '',
       description: 'Herdez',
       size: '38',
       price: '$25'
     }
   ];
-  flechaDer = "../assets/flecha_derecha.png";
+  flechaDer = "assets/flecha_derecha.png";
   constructor(private route: Router, private modalCtrl: ModalController, private cartService: CartService) { 
     this.productos();
   }

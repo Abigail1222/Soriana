@@ -15,7 +15,7 @@ export class ZapatosPage implements OnInit {
     {
       id: 17,
       name: "Tenis",
-      image: '../assets/tenis.jpg',
+      image: 'assets/tenis.jpg',
       url: '',
       description: 'Charly',
       size: '9',
@@ -24,7 +24,7 @@ export class ZapatosPage implements OnInit {
     {
       id: 18,
       name: "Tacón",
-      image: '../assets/tacon.jpg',
+      image: 'assets/tacon.jpg',
       url: '',
       description: 'Spring',
       size: '26',
@@ -33,7 +33,7 @@ export class ZapatosPage implements OnInit {
     {
       id: 19,
       name: "Zapato hombre",
-      image: '../assets/zapato.jpg',
+      image: 'assets/zapato.jpg',
       url: '',
       description: 'Privalia',
       size: '8',
@@ -42,14 +42,14 @@ export class ZapatosPage implements OnInit {
     {
       id: 20,
       name: "Chancla playa",
-      image: '../assets/chancla.jpg',
+      image: 'assets/chancla.jpg',
       url: '',
       description: 'Summer',
       size: '7',
       price: '$89'
     }
   ]
-  flechaDer = "../assets/flecha_derecha.png";
+  flechaDer = "assets/flecha_derecha.png";
   constructor(private route: Router, private modalCtrl: ModalController, private cartService: CartService) { 
     this.productos();
   }

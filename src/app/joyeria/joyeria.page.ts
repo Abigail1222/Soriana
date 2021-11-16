@@ -15,7 +15,7 @@ export class JoyeriaPage implements OnInit {
     {
       id: 13,
       name: "Aretes Esfera",
-      image: '../assets/arete.jpg',
+      image: 'assets/arete.jpg',
       url: '',
       description: 'Fraiche',
       size: 'Unitalla',
@@ -24,7 +24,7 @@ export class JoyeriaPage implements OnInit {
     {
       id: 14,
       name: "Collar perlas",
-      image: '../assets/collar.jpg',
+      image: 'assets/collar.jpg',
       url: '',
       description: 'Eva',
       size: 'Unitalla',
@@ -33,7 +33,7 @@ export class JoyeriaPage implements OnInit {
     {
       id: 15,
       name: "Reloj",
-      image: '../assets/reloj.jpg',
+      image: 'assets/reloj.jpg',
       url: '',
       description: 'CURREN',
       size: 'Unitalla',
@@ -42,14 +42,14 @@ export class JoyeriaPage implements OnInit {
     {
       id: 16,
       name: "Anillo",
-      image: '../assets/anillo.jpg',
+      image: 'assets/anillo.jpg',
       url: '',
       description: 'Her',
       size: 'CH',
       price: '$79'
     }
   ];
-  flechaDer = "../assets/flecha_derecha.png";
+  flechaDer = "assets/flecha_derecha.png";
   constructor(private route: Router, private modalCtrl: ModalController, private cartService: CartService) { 
     this.productos();
   }

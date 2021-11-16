@@ -8,8 +8,8 @@ import { CartService } from '../services/cart.service';
   styleUrls: ['./promocion.page.scss'],
 })
 export class PromocionPage implements OnInit {
-  flechaDer = "../assets/flecha_derecha.png";
-  blusa_rosa = "../assets/blusa_rosa.jpg";
+  flechaDer = "assets/flecha_derecha.png";
+  blusa_rosa = "assets/blusa_rosa.jpg";
   descuento: boolean = true;
   envio: number;
   total: number;

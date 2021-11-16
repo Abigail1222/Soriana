@@ -17,7 +17,7 @@ export class FrutaVerduraPage implements OnInit {
     {
       id: 33,
       name: "Tomate",
-      image: '../assets/tomate.jpg',
+      image: 'assets/tomate.jpg',
       url: '',
       description: 'Soriana',
       size: '32',
@@ -26,7 +26,7 @@ export class FrutaVerduraPage implements OnInit {
     {
       id: 34,
       name: "Cebolla",
-      image: '../assets/cebolla.jpg',
+      image: 'assets/cebolla.jpg',
       url: '',
       description: 'Soriana',
       size: 'L',
@@ -35,7 +35,7 @@ export class FrutaVerduraPage implements OnInit {
     {
       id: 35,
       name: "Manzana roja",
-      image: '../assets/manzana.jpg',
+      image: 'assets/manzana.jpg',
       url: '',
       description: 'Soriana',
       size: 'M',
@@ -44,14 +44,14 @@ export class FrutaVerduraPage implements OnInit {
     {
       id: 36,
       name: "Platano Chiapas",
-      image: '../assets/platano.jpg',
+      image: 'assets/platano.jpg',
       url: '',
       description: 'Soriana',
       size: '38',
       price: '$10kg'
     }
   ];
-  flechaDer = "../assets/flecha_derecha.png";
+  flechaDer = "assets/flecha_derecha.png";
   constructor(private route: Router, private modalCtrl: ModalController, private cartService: CartService) { 
     this.productos();
   }

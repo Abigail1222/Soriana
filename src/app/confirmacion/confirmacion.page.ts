@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
 export class ConfirmacionPage implements OnInit {
 
   constructor(private route:Router) { }
-  flechaDer = "../assets/flecha_derecha.png";
+  flechaDer = "assets/flecha_derecha.png";
   ngOnInit() {
   }
 

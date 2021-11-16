@@ -8,7 +8,7 @@ import { Router } from '@angular/router';
 })
 export class DepartmentPage implements OnInit {
 
-  flechaDer = "../assets/flecha_derecha.png";
+  flechaDer = "assets/flecha_derecha.png";
 
   constructor(private route:Router) { }
 

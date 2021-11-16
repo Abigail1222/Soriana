@@ -8,7 +8,7 @@ import { ModalCarritoPage } from '../modal-carrito/modal-carrito.page';
   styleUrls: ['./card-producto.component.scss'],
 })
 export class CardProductoComponent implements OnInit {
-  blusa_rosa = "../assets/blusa_rosa.jpg";
+  blusa_rosa = "assets/blusa_rosa.jpg";
   items = this.cartService.getItems();
   carrito: ModalCarritoPage;
   constructor(private cartService: CartService) {
