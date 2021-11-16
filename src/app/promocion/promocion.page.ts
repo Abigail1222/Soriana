@@ -31,4 +31,8 @@ export class PromocionPage implements OnInit {
     this.total = this.carritoSvc.getTotal();
   }
 
+  redirect() {
+    this.route.navigate(['home']);
+  }
+
 }
